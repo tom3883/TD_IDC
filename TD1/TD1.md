@@ -100,9 +100,5 @@ Nevertheless, SingleRank, having the best ROUGE score, still has some insufficie
 
 For representing each document and its respective extracted keyphrases in the form of a knowledge graph, we suggest the following structure :
 
-- Low-level : each document would have a graph with nodes representing the extracted keyphrases.
-- High-level : every documents would be represented as 1 node and would be linked by their predominant keyphrase extracted.
 
-We can use the vocabulary of the extracted keyphrases of all the documents.
-
-To represent this as a graph, we would have each document and each keyphrases as node. If a key phrase represents a document, we connect each other with a weighted link to measure the level of confidence. The vocabulary used can be all the extracted keyphrases. To have a more interesting graph, we could also compute the similarity between differents keyphrases to link them or link every keyphrases to a general topic.
+We would have each document and each keyphrases as node. If a key phrase represents a document, we connect each other with a weighted link to measure the level of confidence. The vocabulary used can be all the extracted keyphrases. To have a more interesting graph, we could also compute the similarity between differents keyphrases to link them or link every keyphrases to a general topic.
