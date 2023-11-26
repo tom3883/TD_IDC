@@ -32,7 +32,7 @@ We chose to implement 3 KPE algorithms: PositionRank, SingleRank and TextRank. A
     4. Combines the term frequency and sentence position scores to determine the overall importance of each word (Sentence Salience Score)
     5. Extracts words that have the highest salience scores (Keyphrase Extraction)
 
-     *****- SingleRank :*
+     *- SingleRank :*
 
 SingleRank is a graph-based summarization algorithm. Therefore, it performs in the first place a graph representation of a given document where each sentence is represented as a node. Plus, this algorithm measures the degree of similarity between each pair of sentences of the document. Then, an importance degree (centrality score) is assigned to each sentence, allowing a more precise analysis for building a summary. The further process of the summary generation can be seen as follows :
 
@@ -57,11 +57,11 @@ At this point we have an undirected unweigth graph.
 - After that, we keep only a a third of our vertices which corresponds to the vertices which have the highest score.
 - A post processing is done on the remainng vertices and if two words appears next to each other in the document a multi-word keyword is created.
 
-1. **Best ROUGE score :**
+2. **Best ROUGE score :**
 
 From the 3 keyphrase extraction algorithms (Position Rank, Single Rank and Text Rank), Single Rank has the best ROUGE score.
 
-1. **Extracted keyphrases evaluation :**
+3. **Extracted keyphrases evaluation :**
 
 Overall, the extracted keyphrases seem to be semantically correct as the algorithms managed to capture the most pertinent words from the documents. However, these words don’t often seem to be the best solution for retrieving the main context of the document as they sometimes fail to generalize the essence and the subject of each document, capturing only some frequent words from the document. For example, the second best keyphrase candidate by SingleRank for the following document was *“such services”,* which is not a suitable solution for a summary : 
 
@@ -74,16 +74,19 @@ surrounds the technology, but most industry observers are still
 convinced that wavelength services with ultimately flourish”*
 
 For notice, the first best keyphrase candidate for this document is *“wavelength services”*, which seems to be an optimal summary.
+When comparing the best keyphrased extracted by each algorithm, we notice that SingleRank and TextRank have very similar result. Which is not the case of PositionRank. However, each algorithm have relatively good results when picking the best kkeyphrased.
 
-1. **Runtime comparison :**
+4. **Runtime comparison :**
 
-We note the following runtimes for KP extraction for each algorithm : 
+We note the following runtimes for KP extraction for each algorithm when retrieving the keyphrases of 100 documents: 
 
-- PositionRank:
-- SingleRank:
-- TextRank:
+- PositionRank: 199 seconds
+- SingleRank: 195 seconds
+- TextRank: 200 seconds
 
-1. **Best algorithm analysis**
+
+
+5. **Best algorithm analysis**
 
 Our tests have shown the best ROUGE score for SingleRank algorithm. 
 
@@ -93,7 +96,7 @@ On the other hand, TextRank performs tokenization and speech tagging. As far as 
 
 Nevertheless, SingleRank, having the best ROUGE score, still has some insufficient results. We suppose that this may be due to the inaccurate measurements of the similarity degrees between each pair of sentences. This issue may come from our dataset and from the way the sentences are formed in each document. Thus, the centrality score may have been the best-suited metrics for our dataset.
 
-1. **Keyphrase Knowledge Graph**
+6. **Keyphrase Knowledge Graph**
 
 For representing each document and its respective extracted keyphrases in the form of a knowledge graph, we suggest the following structure :
 
