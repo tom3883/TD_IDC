@@ -1,0 +1,17 @@
+2023-12-10 16:33:11 ["8ch8hc2450g50"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Query parameter (html special chars encoded) 'service': edamam/findRecipes
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2023-12-10 16:33:11 ["8ch8hc2450g50"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2023-12-10 16:33:11 ["8ch8hc2450g50"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [keyword] => cake
+)
+
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Web API query string: https://api.edamam.com/api/recipes/v2?type=any&q=cake&app_id=b63d0a89&app_key=%208a435a5ffc32da403d0758de1aaf70d2
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/edamam/findRecipes/construct.sparql
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: Sending response with Content-Type: text/turtle
+2023-12-10 16:33:11 ["8ch8hc2450g50"] service NOTICE: --------- Done - SPARQL ÂµS execution --------
