@@ -1,0 +1,10 @@
+@prefix ns1: <http://example.org/recipies#>
+@prefix schema: <http://schema.org/>
+
+SELECT ?name
+WHERE
+{
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> { 
+        ?recipeName ns1:name ?name .
+    }
+}
