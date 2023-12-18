@@ -1,6 +1,5 @@
 .DS_Store
 TD3_microservice/data/WMT_Grocery_202209.csv
 TD3_microservice/csv2rdf
-TD3_microservice/data/walmart_products.ttl
 TD3_microservice/environment/
 TD3_microservice/micro-service/logs/
