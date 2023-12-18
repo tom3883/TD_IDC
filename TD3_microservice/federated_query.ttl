@@ -1,10 +1,13 @@
 @prefix ns1: <http://example.org/recipies#>
 @prefix schema: <http://schema.org/>
 
-SELECT ?name
-WHERE
-{
-    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> { 
-        ?recipeName ns1:name ?name .
+
+select * where {
+    ?p <http://schema.org/product_name> ?ingredient ;
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
+        select ?recipeName ?ingredient where {
+            ?x <http://schema.org/name> ?recipeName .
+            ?x <http://schema.org/recipeIngredient> ?ingredient .
+        }
     }
 }
