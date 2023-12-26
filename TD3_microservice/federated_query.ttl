@@ -11,3 +11,25 @@ select * where {
         }
     }
 }
+
+##############################
+##          v2              ##
+##############################
+
+@prefix ns1: <http://example.org/recipies#>
+@prefix schema: <http://schema.org/>
+@prefix service: <http://localhost/service/edamam/findRecipes?keyword=>
+
+SELECT ?recipeName (MIN(?ingredient) AS ?uniqueIngredient)
+WHERE {
+    ?p schema:product_name ?ingredient ;
+       SERVICE service:cake {
+           SELECT ?recipeName ?ingredient
+           WHERE {
+               ?x schema:name ?recipeName .
+               ?x schema:recipeIngredient ?ingredient .
+           }
+       }
+}
+GROUP BY ?recipeName
+ORDER BY ?recipeName
