@@ -1,6 +1,29 @@
-@prefix ns1: <http://example.org/recipies#>
-@prefix schema: <http://schema.org/>
+##############################
+##          v0              ##
+##############################
+# Screenshot where you query individually each source 
+# with a simple "construct where {?s ?p ?p}".
 
+@prefix ns1: <http://example.org/recipes#>
+@prefix schema: <http://schema.org/>
+@prefix service: <http://localhost/service/edamam/findRecipes?keyword=>
+
+# for turtle file
+CONSTRUCT WHERE {?s ?p ?o}
+
+# for api
+SELECT * WHERE {
+    SERVICE service:cake {
+        ?s ?p ?o
+    }
+}
+
+##############################
+##          v1              ##
+##############################
+
+@prefix ns1: <http://example.org/recipes#>
+@prefix schema: <http://schema.org/>
 
 select * where {
     ?p <http://schema.org/product_name> ?ingredient ;
@@ -16,20 +39,15 @@ select * where {
 ##          v2              ##
 ##############################
 
-@prefix ns1: <http://example.org/recipies#>
+@prefix ns1: <http://example.org/recipes#>
 @prefix schema: <http://schema.org/>
-@prefix service: <http://localhost/service/edamam/findRecipes?keyword=>
 
-SELECT ?recipeName (MIN(?ingredient) AS ?uniqueIngredient)
-WHERE {
+SELECT * WHERE {
     ?p schema:product_name ?ingredient ;
-       SERVICE service:cake {
-           SELECT ?recipeName ?ingredient
-           WHERE {
-               ?x schema:name ?recipeName .
-               ?x schema:recipeIngredient ?ingredient .
-           }
-       }
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
+        SELECT ?recipeName ?ingredient WHERE {
+            ?x schema:name ?recipeName .
+            ?x schema:recipeIngredient ?ingredient .
+        }
+    }
 }
-GROUP BY ?recipeName
-ORDER BY ?recipeName
