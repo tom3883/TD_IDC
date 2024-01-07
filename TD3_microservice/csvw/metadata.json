@@ -1,6 +1,6 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "./data/walmart_products_reduced.csv",
+  "url": "./walmart_products.csv",
   "tableSchema": {
       "aboutUrl": "http://example.org/walmart/products/{index}",
       "columns": [
@@ -13,8 +13,8 @@
             },
             {
                 "titles": ["product_name"],
-                "name": "product_name",
-                "propertyUrl": "schema:product_name"
+                "name": "name",
+                "propertyUrl": "schema:name"
             },
             {
                 "titles": ["brand"],

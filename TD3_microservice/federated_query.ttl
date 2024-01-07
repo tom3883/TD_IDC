@@ -26,7 +26,7 @@ SELECT * WHERE {
 @prefix schema: <http://schema.org/>
 
 select * where {
-    ?p <http://schema.org/product_name> ?ingredient ;
+    ?p <http://schema.org/name> ?ingredient ;
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
         select ?recipeName ?ingredient where {
             ?x <http://schema.org/name> ?recipeName .
@@ -43,7 +43,7 @@ select * where {
 @prefix schema: <http://schema.org/>
 
 SELECT * WHERE {
-    ?p schema:product_name ?ingredient ;
+    ?p schema:name ?ingredient ;
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
         SELECT ?recipeName ?ingredient WHERE {
             ?x schema:name ?recipeName .

@@ -1,4 +1,3 @@
-@prefix ns1: <http://example.org/recipes#>
 @prefix schema: <http://schema.org/>
 
 CONSTRUCT {
