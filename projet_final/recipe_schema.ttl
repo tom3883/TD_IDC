@@ -78,6 +78,12 @@
     rdfs:domain :Recipe ;
     rdfs:range :RestrictedDiet .
 
+:recipeInstructions a owl:DatatypeProperty ;
+    rdfs:label "recipe instructions"@en ;
+    owl:equivalentProperty s:recipeInstructions ;
+    rdfs:domain :Recipe ;
+    rdfs:range xsd:string .
+
 # Properties related to products #
 
 :category a owl:ObjectProperty ;
