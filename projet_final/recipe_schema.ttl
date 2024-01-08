@@ -26,6 +26,12 @@
     rdfs:label "Nutrition Information"@en ;
     owl:equivalentClass s:NutritionInformation .
 
+:RestrictedDiet a owl:Class ;
+    rdfs:label "Restricted Diet"@en ;
+    rdfs:comment "A diet restricted to certain foods or preparations
+                for cultural, religious, health or lifestyle reasons."@en ;
+    owl:equivalentClass s:RestrictedDiet .
+
 # Classes related to products #
 
 :Product a owl:Class ;
@@ -66,6 +72,12 @@
     rdfs:domain :NutritionInformation ;
     rdfs:range xsd:float .
 
+:suitableForDiet a owl:ObjectProperty ;
+    rdfs:label "suitable for diet"@en ;
+    owl:equivalentProperty s:suitableForDiet ;
+    rdfs:domain :Recipe ;
+    rdfs:range :RestrictedDiet .
+
 # Properties related to products #
 
 :category a owl:ObjectProperty ;
@@ -85,5 +97,3 @@
     rdfs:label "price"@en ;
     owl:equivalentProperty s:price ;
     rdfs:domain :Product .
-
-
