@@ -16,6 +16,8 @@
 
 # Classes #
 
+# Classes related to recipes #
+
 :Recipe a owl:Class ;
     rdfs:label "Recipe"@en ;
     owl:equivalentClass s:Recipe .
@@ -24,7 +26,29 @@
     rdfs:label "Nutrition Information"@en ;
     owl:equivalentClass s:NutritionInformation .
 
+# Classes related to products #
+
+:Product a owl:Class ;
+    rdfs:label "Product"@en ;
+    owl:equivalentClass s:Product .
+
+:Brand a owl:Class ;
+    rdfs:label "Brand"@en ;
+    owl:equivalentClass s:Brand .
+
 # Properties #
+
+:name a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    owl:equivalentProperty s:name ;
+    rdfs:range xsd:string .
+
+:description a owl:DatatypeProperty ;
+    rdfs:label "description"@en ;
+    owl:equivalentProperty s:description ;
+    rdfs:range xsd:string .
+
+# Properties related to recipes #
 
 :recipeIngredient a owl:DatatypeProperty ;
     rdfs:label "ingredients"@en ;
@@ -40,5 +64,26 @@
     rdfs:label "calories"@en ;
     owl:equivalentProperty s:calories ;
     rdfs:domain :NutritionInformation ;
-    rdfs:range xsd:float ;
+    rdfs:range xsd:float .
+
+# Properties related to products #
+
+:category a owl:ObjectProperty ;
+    rdfs:label "category of a product"@en ;
+    owl:equivalentProperty s:category ;
+    rdfs:domain :Product .
+
+:brand a owl:ObjectProperty ;
+    rdfs:label "brand of a product"@en ;
+    owl:equivalentClass s:brand ;
+    rdfs:domain :Product ;
+    rdfs:range :Brand .
+
+# Extended schema #
+
+:price a owl:DatatypeProperty ;
+    rdfs:label "price"@en ;
+    owl:equivalentProperty s:price ;
+    rdfs:domain :Product .
+
 
