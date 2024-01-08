@@ -1,0 +1,44 @@
+@prefix : <http://recipes-project.com/schema#> .
+@prefix recipes: <http://recipes-project.com/recipes/data#> .
+@prefix products: <http://recipes-project.com/products/data#> .
+
+@prefix s: <https://schema.org/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+: a owl:Ontology ;
+  rdfs:label "Recipes Ontology" ;
+  rdfs:comment "An ontology representing recipes and products sold by walmart." ;
+  owl:priorVersion <http://project-wold.fr/schema#> .
+
+# Classes #
+
+:Recipe a owl:Class ;
+    rdfs:label "Recipe"@en ;
+    owl:equivalentClass s:Recipe .
+
+:NutritionInformation a owl:Class ;
+    rdfs:label "Nutrition Information"@en ;
+    owl:equivalentClass s:NutritionInformation .
+
+# Properties #
+
+:recipeIngredient a owl:DatatypeProperty ;
+    rdfs:label "ingredients"@en ;
+    owl:equivalentProperty s:recipeIngredient ;
+    rdfs:domain :Recipe .
+
+:nutrition a owl:ObjectProperty ;
+    rdfs:label "nutrition"@en ;
+    owl:equivalentProperty s:nutrition ;
+    rdfs:domain :NutritionInformation .
+
+:calories a owl:DatatypeProperty ;
+    rdfs:label "calories"@en ;
+    owl:equivalentProperty s:calories ;
+    rdfs:domain :NutritionInformation ;
+    rdfs:range xsd:float ;
+
