@@ -26,6 +26,10 @@
     rdfs:label "Nutrition Information"@en ;
     owl:equivalentClass s:NutritionInformation .
 
+:RecipeCategory a owl:Class ;
+    rdfs:label "Recipe Category"@en ;
+    rdfs:comment "Recipes can be classed in different categories"@en ;
+
 # Classes related to products #
 
 :Product a owl:Class ;
@@ -72,6 +76,11 @@
     rdfs:domain :Recipe ;
     rdfs:range xsd:string .
 
+:recipeCategory a owl:ObjectProperty ;
+    rdfs:label "recipe category"@en ;
+    rdfs:domain :Recipe ;
+    rdfs:range :RecipeCategory .
+
 # Properties related to products #
 
 :category a owl:ObjectProperty ;
@@ -85,7 +94,7 @@
     rdfs:domain :Product ;
     rdfs:range :Brand .
 
-# Extended schema #
+# Properties extended schema #
 
 :price a owl:DatatypeProperty ;
     rdfs:label "price"@en ;
