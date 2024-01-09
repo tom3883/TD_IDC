@@ -2,12 +2,13 @@
 @prefix recipes: <http://recipes-project.com/recipes/data#> .
 @prefix products: <http://recipes-project.com/products/data#> .
 
-@prefix s: <https://schema.org/#> .
+@prefix s: <https://schema.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix db:    <http://dbpedia.org/page#> .
 
 : a owl:Ontology ;
   rdfs:label "Recipes Ontology" ;
@@ -15,6 +16,11 @@
   owl:priorVersion <http://project-wold.fr/schema#> .
 
 # Classes #
+
+:Category a owl:Class;
+    rdfs:label "Category"@en, "Catégorie"@fr;
+    rdfs:definition "Category, type of a concept or an object"@en;
+    owl:equivalentClass db:Category .
 
 # Classes related to recipes #
 
@@ -29,6 +35,8 @@
 :RecipeCategory a owl:Class ;
     rdfs:label "Recipe Category"@en ;
     rdfs:definition "Recipes can be classed in different categories"@en ;
+    owl:differentFrom :ProductCategory ;
+    rdfs:subClassOf :Category .
 
 # Classes related to products #
 
@@ -43,6 +51,8 @@
 :ProductCategory a owl:Class ;
     rdfs:label "Product Category"@en ;
     rdfs:definition "Products can be classed in different categories"@en ;
+    owl:differentFrom :RecipeCategory ;
+    rdfs:subClassOf :Category .
 
 # Properties #
 
