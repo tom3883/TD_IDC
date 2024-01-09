@@ -28,7 +28,7 @@
 
 :RecipeCategory a owl:Class ;
     rdfs:label "Recipe Category"@en ;
-    rdfs:comment "Recipes can be classed in different categories"@en ;
+    rdfs:definition "Recipes can be classed in different categories"@en ;
 
 # Classes related to products #
 
@@ -39,6 +39,10 @@
 :Brand a owl:Class ;
     rdfs:label "Brand"@en ;
     owl:equivalentClass s:Brand .
+
+:ProductCategory a owl:Class ;
+    rdfs:label "Product Category"@en ;
+    rdfs:definition "Products can be classed in different categories"@en ;
 
 # Properties #
 
@@ -88,10 +92,10 @@
 
 # Properties related to products #
 
-:category a owl:ObjectProperty ;
+:productCategory a owl:ObjectProperty ;
     rdfs:label "category of a product"@en ;
-    owl:equivalentProperty s:category ;
-    rdfs:domain :Product .
+    rdfs:domain :Product ;
+    rdfs:range :ProductCategory .
 
 :brand a owl:ObjectProperty ;
     rdfs:label "brand of a product"@en ;
