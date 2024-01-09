@@ -81,6 +81,11 @@
     rdfs:domain :Recipe ;
     rdfs:range :RecipeCategory .
 
+:healthLabels a owl:DatatypeProperty ;
+    rdfs:label "health labels"@en ;
+    rdfs:domain :Recipe ;
+    rdfs:range xsd:string .
+
 # Properties related to products #
 
 :category a owl:ObjectProperty ;
@@ -94,14 +99,7 @@
     rdfs:domain :Product ;
     rdfs:range :Brand .
 
-# Properties extended schema #
-
 :price a owl:DatatypeProperty ;
     rdfs:label "price"@en ;
     owl:equivalentProperty s:price ;
     rdfs:domain :Product .
-
-:healthLabels a owl:DatatypeProperty ;
-    rdfs:label "health labels"@en ;
-    rdfs:domain :Recipe ;
-    rdfs:range xsd:string .
