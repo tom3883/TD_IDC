@@ -56,7 +56,8 @@ recipes:Drinks a :RecipeCategory, skos:Concept ;
 recipes:MainCourse a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
     skos:prefLabel "MainCourse"@en ;
-    skos:definition "MainCourse"@en .
+    skos:definition "MainCourse"@en ;
+    skos:narrower recipes:Sandwiches .
 
 # Pancake
 recipes:Pancake a :RecipeCategory, skos:Concept ;
@@ -86,7 +87,8 @@ recipes:Salad a :RecipeCategory, skos:Concept ;
 recipes:Sandwiches a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
     skos:prefLabel "Sandwiches"@en ;
-    skos:definition "Sandwiches"@en .
+    skos:definition "Sandwiches"@en ;
+    skos:broader recipes:MainCourse .
 
 # Side dish
 recipes:SideDish a :RecipeCategory, skos:Concept ;
