@@ -1,0 +1,15 @@
+prefix sh: <http://www.w3.org/ns/shacl#> .
+prefix : <http://recipes-project.com/schema#> .
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+prefix shapes: <http://recipes-project.com/shapes#> .
+
+shapes:recipe a sh:NodeShape ;
+  sh:targetClass :Recipe ;
+  sh:property [
+    sh:path :recipeIngredient ;
+    sh:minCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :recipeCategory ;
+    sh:minCount 0 ;
+  ] .

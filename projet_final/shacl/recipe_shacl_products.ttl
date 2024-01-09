@@ -1,0 +1,22 @@
+prefix sh: <http://www.w3.org/ns/shacl#> .
+prefix : <http://recipes-project.com/schema#> .
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+prefix shapes: <http://recipes-project.com/shapes#> .
+
+shapes:product a sh:NodeShape ;
+  sh:targetClass :Product ;
+  sh:property [
+    sh:path :price ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :brand ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+  sh:property [
+    sh:path :productCategory ;
+    sh:minCount 0 ;
+    sh:maxCount 1 ;
+  ] .
