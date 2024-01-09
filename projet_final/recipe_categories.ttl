@@ -1,0 +1,113 @@
+@prefix : <http://recipes-project.com/schema#> .
+@prefix recipes: <http://recipes-project.com/recipes#> .
+
+@prefix s: <https://schema.org/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+
+recipes:RecipeCategoriesThesaurus a skos:ConceptScheme;
+    skos:prefLabel "Recipe Categories Thesaurus"@en ;
+    skos:definition "A collection of categories of recipes, categorizing different types of recipes."@en ;
+    skos:hasTopConcept recipes:Starter ;
+    skos:hasTopConcept recipes:MainCourse ;
+    skos:hasTopConcept recipes:Desserts ;
+
+# Cookies
+recipes:Cookies a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Cookies"@en ;
+    skos:definition "Biscuits and cookies"@en .
+
+# Bread
+recipes:Bread a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Bread"@en ;
+    skos:definition "Bread"@en .
+
+# Cereals
+recipes:Cereals a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Cereals"@en ;
+    skos:definition "Cereals"@en .
+
+# Sauces
+recipes:Sauces a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Sauces"@en ;
+    skos:definition "Sauces"@en .
+
+# Desserts
+recipes:Desserts a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Desserts"@en ;
+    skos:definition "Desserts"@en .
+
+# Drinks
+recipes:Drinks a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Drinks"@en ;
+    skos:definition "Drinks"@en .
+
+# Main course 
+recipes:MainCourse a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "MainCourse"@en ;
+    skos:definition "MainCourse"@en .
+
+# Pancake
+recipes:Pancake a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Pancake"@en ;
+    skos:definition "Pancake"@en .
+
+# Preps
+recipes:Preps a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Preps"@en ;
+    skos:definition "Preps"@en .
+
+# Preserve
+recipes:Preserve a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Preserve"@en ;
+    skos:definition "Preserve"@en .
+
+# Salad
+recipes:Salad a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:Salad "Salad"@en ;
+    skos:definition "Salad"@en .
+
+# Sandwiches
+recipes:Sandwiches a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Sandwiches"@en ;
+    skos:definition "Sandwiches"@en .
+
+# Side dish
+recipes:SideDish a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Side dish"@en ;
+    skos:definition "Side dish"@en .
+
+# Soups
+recipes:Soups a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Soups"@en ;
+    skos:definition "Soups"@en .
+
+# Starter
+recipes:Starter a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Starter"@en ;
+    skos:definition "Starter"@en .
+
+# Sweets
+recipes:Sweets a :RecipeCategory, skos:Concept ;
+    skos:inScheme recipes:RecipeCategoriesThesaurus ;
+    skos:prefLabel "Sweets"@en ;
+    skos:definition "Sweets"@en .
