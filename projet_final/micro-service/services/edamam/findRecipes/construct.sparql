@@ -1,13 +1,20 @@
-@prefix ns1: <http://example.org/recipes#>
-@prefix schema: <http://schema.org/>
+@prefix : <http://recipes-project.com/schema#> .
+@prefix s: <https://schema.org#> .
+@prefix recipes: <http://recipes-project.com/recipes#> .
 
 CONSTRUCT {
-    ?recipe a schema:Recipe .
-    ?recipe schema:recipeIngredient ?food .
-    ?recipe schema:name ?recipeName ;
+    ?recipe a :Recipe .
+    ?recipe :name ?recipeName .
+    ?recipe :recipeIngredient ?food .
+    ?recipe :recipeCategory ?dishType .
+    ?recipe :healthLabels ?healthLabels .
+    ?recipe :calories ?calories .
 
 } WHERE {
     [] api:recipe ?recipe .
     ?recipe api:label ?recipeName .
     ?recipe api:ingredients [ api:food ?food ] .
+    ?recipe api:dishType ?dishType .
+    ?recipe api:healthLabels ?healthLabels .
+    ?recipe api:calories ?calories .
 }
