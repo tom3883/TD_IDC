@@ -6,6 +6,7 @@ CONSTRUCT {
     ?recipe a :Recipe .
     ?recipe :name ?recipeName .
     ?recipe :recipeIngredient ?food .
+    ?dishType a :RecipeCategory .
     ?recipe :recipeCategory ?dishType .
     ?recipe :healthLabels ?healthLabels .
     ?recipe :calories ?calories .
