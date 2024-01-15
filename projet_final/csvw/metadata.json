@@ -1,0 +1,36 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "./walmart_products.csv",
+  "tableSchema": {
+      "aboutUrl": "http://example.org/walmart/products/{index}",
+      "columns": [
+            {
+                "titles": ["index"],
+                "name": "index",
+                "required": true,
+                "propertyUrl": "schema:index",
+                "suppressOutput": true
+            },
+            {
+                "titles": ["product_name"],
+                "name": "name",
+                "propertyUrl": "schema:name"
+            },
+            {
+                "titles": ["brand"],
+                "name": "brand",
+                "propertyUrl": "schema:brand"
+            },
+            {
+                "titles": ["category"],
+                "name": "category",
+                "propertyUrl": "schema:category"
+            },
+            {
+                "titles": ["price_current"],
+                "datatype": "string",
+                "propertyUrl": "schema:price_current"
+            }
+      ]
+  }
+}

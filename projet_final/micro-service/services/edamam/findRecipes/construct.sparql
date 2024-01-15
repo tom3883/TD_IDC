@@ -1,0 +1,13 @@
+@prefix ns1: <http://example.org/recipes#>
+@prefix schema: <http://schema.org/>
+
+CONSTRUCT {
+    ?recipe a schema:Recipe .
+    ?recipe schema:recipeIngredient ?food .
+    ?recipe schema:name ?recipeName ;
+
+} WHERE {
+    [] api:recipe ?recipe .
+    ?recipe api:label ?recipeName .
+    ?recipe api:ingredients [ api:food ?food ] .
+}

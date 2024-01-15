@@ -1,5 +1,8 @@
 .DS_Store
 TD3_microservice/data/WMT_Grocery_202209.csv
-TD3_microservice/csv2rdf
+csv2rdf
 TD3_microservice/environment/
 TD3_microservice/micro-service/logs/
+
+projet_final/micro-service/logs/
+projet_final/micro-service/html/
