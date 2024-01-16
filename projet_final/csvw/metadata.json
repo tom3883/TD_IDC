@@ -1,6 +1,6 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "./walmart_products.csv",
+  "url": "./walmart_products_reduced.csv",
   "tableSchema": {
       "aboutUrl": "http://recipes-project.com/products/{index}",
       "columns": [
