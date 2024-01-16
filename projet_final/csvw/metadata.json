@@ -2,7 +2,7 @@
   "@context": "http://www.w3.org/ns/csvw",
   "url": "./walmart_products.csv",
   "tableSchema": {
-      "aboutUrl": "http://example.org/walmart/products/{index}",
+      "aboutUrl": "http://recipes-project.com/products/{index}",
       "columns": [
             {
                 "titles": ["index"],
@@ -14,22 +14,22 @@
             {
                 "titles": ["product_name"],
                 "name": "name",
-                "propertyUrl": "schema:name"
+                "propertyUrl": "http://recipes-project.com/schema/productName"
             },
             {
                 "titles": ["brand"],
                 "name": "brand",
-                "propertyUrl": "schema:brand"
+                "propertyUrl": "http://recipes-project.com/schema/brandName"
             },
             {
                 "titles": ["category"],
                 "name": "category",
-                "propertyUrl": "schema:category"
+                "propertyUrl": "http://recipes-project.com/schema/categoryName"
             },
             {
                 "titles": ["price_current"],
                 "datatype": "string",
-                "propertyUrl": "schema:price_current"
+                "propertyUrl": "http://recipes-project.com/schema/price"
             }
       ]
   }

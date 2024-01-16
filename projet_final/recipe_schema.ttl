@@ -1,6 +1,6 @@
 @prefix : <http://recipes-project.com/schema#> .
 @prefix recipes: <http://recipes-project.com/recipes/data#> .
-@prefix products: <http://recipes-project.com/products/data#> .
+@prefix products: <http://recipes-project.com/products#> .
 
 @prefix s: <https://schema.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -109,9 +109,27 @@
 
 :brand a owl:ObjectProperty ;
     rdfs:label "brand of a product"@en ;
-    owl:equivalentClass s:brand ;
+    owl:equivalentProperty s:brand ;
     rdfs:domain :Product ;
     rdfs:range :Brand .
+
+:productName a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    owl:equivalentProperty :name ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
+:brandName a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    owl:equivalentProperty :name ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
+
+:categoryName a owl:DatatypeProperty ;
+    rdfs:label "name"@en ;
+    owl:equivalentProperty :name ;
+    rdfs:domain :Product ;
+    rdfs:range xsd:string .
 
 :price a owl:DatatypeProperty ;
     rdfs:label "price"@en ;
