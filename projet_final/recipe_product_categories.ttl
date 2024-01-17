@@ -13,8 +13,7 @@
     skos:exactMatch dbc:Category:Foods;
     skos:broader dbc:Category:Food_and_drink;
     skos:narrower dbc:Category:Types_of_food;
-    skos:definition "The substance is ingested by an organism and assimilated by the organism's
-                    cells in an effort to produce energy, maintain life, or stimulate growth" .
+    skos:definition "The substance is ingested by an organism and assimilated by the organism's cells in an effort to produce energy, maintain life, or stimulate growth"@en .
 
 <CerealGrains> a :ProductCategory, skos:Concept;
     skos:prefLabel "Cereals and Grains"@en, "Céréales et graines"@fr;
@@ -28,8 +27,7 @@
 
 <Fruits> a :ProductCategory, skos:Concept;
     skos:prefLabel "Fruits"@en, "Fruits"@fr;
-    skos:definition "fruit normally means the seed-associated fleshy structures (or produce) of plants 
-                    that typically are sweet or sour and edible in the raw state, such as apples, bananas, grapes, lemons, oranges, and strawberries"@en,
+    skos:definition "fruit normally means the seed-associated fleshy structures (or produce) of plants that typically are sweet or sour and edible in the raw state, such as apples, bananas, grapes, lemons, oranges, and strawberries"@en,
                     "un fruit est un aliment végétal, à la saveur sucrée, généralement consommé cru"@fr ;
     skos:exactMatch dbc:Category:Fruits;
     skos:relatedMatch dbc:Category:Edible_Fruits .
@@ -73,7 +71,7 @@
     skos:member <Milk>, <Dairy> .
 
 <Milk> a :ProductCategory, skos:Concept;
-    skos:prefLabel "Milk"@en, "Lait"@fr,
+    skos:prefLabel "Milk"@en, "Lait"@fr ;
     skos:exactMatch dbc:Category:Milk .
 
 <Dairy> a :ProductCategory, skos:Concept;

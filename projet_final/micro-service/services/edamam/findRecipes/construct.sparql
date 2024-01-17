@@ -19,5 +19,5 @@ CONSTRUCT {
     ?recipe api:healthLabels ?healthLabels .
     ?recipe api:calories ?calories .
     ?c a :RecipeCategory ;
-    ?c skos:prefLabel ?dishType .
+    skos:prefLabel ?dishType .
 }

@@ -14,11 +14,10 @@ recipes:RecipeCategoriesThesaurus a skos:ConceptScheme;
     skos:definition "A collection of categories of recipes, categorizing different types of recipes."@en ;
     skos:hasTopConcept recipes:Starter ;
     skos:hasTopConcept recipes:MainCourse ;
-    skos:hasTopConcept recipes:Desserts ;
+    skos:hasTopConcept recipes:Desserts .
 
 # Cookies
-recipes:BiscuitsCookies a :RecipeCategory, 
-    skos:Concept ;
+recipes:BiscuitsCookies a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
     skos:prefLabel "biscuits and cookies"@en ;
     skos:definition "biscuits and cookies"@en .
