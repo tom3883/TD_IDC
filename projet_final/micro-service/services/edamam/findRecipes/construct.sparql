@@ -1,13 +1,13 @@
 @prefix : <http://recipes-project.com/schema#> .
 @prefix s: <https://schema.org#> .
 @prefix recipes: <http://recipes-project.com/recipes#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 CONSTRUCT {
     ?recipe a :Recipe .
     ?recipe :name ?recipeName .
     ?recipe :recipeIngredient ?food .
-    ?dishType a :RecipeCategory .
-    ?recipe :recipeCategory ?dishType .
+    ?recipe :recipeCategory ?c .
     ?recipe :healthLabels ?healthLabels .
     ?recipe :calories ?calories .
 
@@ -18,4 +18,6 @@ CONSTRUCT {
     ?recipe api:dishType ?dishType .
     ?recipe api:healthLabels ?healthLabels .
     ?recipe api:calories ?calories .
+    ?c a :RecipeCategory ;
+    ?c skos:prefLabel ?prefC .
 }

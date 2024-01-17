@@ -1,6 +1,6 @@
 {
   "@context": "http://www.w3.org/ns/csvw",
-  "url": "./walmart_products_reduced.csv",
+  "url": "./walmart_products_reduced_annotated.csv",
   "tableSchema": {
       "aboutUrl": "http://recipes-project.com/products/{index}",
       "columns": [
@@ -30,6 +30,11 @@
                 "titles": ["price_current"],
                 "datatype": "string",
                 "propertyUrl": "http://recipes-project.com/schema/price"
+            },
+            {
+                "titles": ["deduced_type"],
+                "propertyUrl": "http://recipes-project.com/schema/deduced_type", 
+                "valueUrl": "http://dbpedia.org/resource/{deduced_type}"
             }
       ]
   }
