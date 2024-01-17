@@ -1,0 +1,17 @@
+
+##############################
+## link results api result to schema
+##############################
+
+PREFIX : <http://recipes-project.com/schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> .
+
+SELECT  ?recipeName ?dishType
+WHERE {
+    ?c a :RecipeCategory ;
+    skos:prefLabel ?dishType .
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
+        ?recipe :name ?recipeName ;
+        :recipeCategory ?dishType .
+    }
+}

@@ -10,8 +10,8 @@
 
 
 recipes:RecipeCategoriesThesaurus a skos:ConceptScheme;
-    skos:prefLabel "Recipe Categories Thesaurus"@en ;
-    skos:definition "A collection of categories of recipes, categorizing different types of recipes."@en ;
+    skos:prefLabel "Recipe Categories Thesaurus" ;
+    skos:definition "A collection of categories of recipes, categorizing different types of recipes." ;
     skos:hasTopConcept recipes:Starter ;
     skos:hasTopConcept recipes:MainCourse ;
     skos:hasTopConcept recipes:Desserts .
@@ -19,97 +19,97 @@ recipes:RecipeCategoriesThesaurus a skos:ConceptScheme;
 # Cookies
 recipes:BiscuitsCookies a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "biscuits and cookies"@en ;
-    skos:definition "biscuits and cookies"@en .
+    skos:prefLabel "biscuits and cookies" ;
+    skos:definition "biscuits and cookies" .
 
 # Bread
 recipes:Bread a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "bread"@en ;
-    skos:definition "bread"@en .
+    skos:prefLabel "bread" ;
+    skos:definition "bread" .
 
 # Cereals
 recipes:Cereals a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "cereals"@en ;
-    skos:definition "cereals"@en .
+    skos:prefLabel "cereals" ;
+    skos:definition "cereals" .
 
 # Sauces
 recipes:Sauces a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "sauces"@en ;
-    skos:definition "sauces"@en .
+    skos:prefLabel "sauces" ;
+    skos:definition "sauces" .
 
 # Desserts
 recipes:Desserts a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "desserts"@en ;
-    skos:definition "desserts"@en .
+    skos:prefLabel "desserts" ;
+    skos:definition "desserts" .
 
 # Drinks
 recipes:Drinks a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "drinks"@en ;
-    skos:definition "drinks"@en .
+    skos:prefLabel "drinks" ;
+    skos:definition "drinks" .
 
 # Main course 
 recipes:MainCourse a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "main course"@en ;
-    skos:definition "main course"@en ;
+    skos:prefLabel "main course" ;
+    skos:definition "main course" ;
     skos:narrower recipes:Sandwiches .
 
 # Pancake
 recipes:Pancake a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "pancake"@en ;
-    skos:definition "pancake"@en .
+    skos:prefLabel "pancake" ;
+    skos:definition "pancake" .
 
 # Preps
 recipes:Preps a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "preps"@en ;
-    skos:definition "preps"@en .
+    skos:prefLabel "preps" ;
+    skos:definition "preps" .
 
 # Preserve
 recipes:Preserve a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "preserve"@en ;
-    skos:definition "preserve"@en .
+    skos:prefLabel "preserve" ;
+    skos:definition "preserve" .
 
 # Salad
 recipes:Salad a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:Salad "salad"@en ;
-    skos:definition "salad"@en .
+    skos:Salad "salad" ;
+    skos:definition "salad" .
 
 # Sandwiches
 recipes:Sandwiches a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "sandwiches"@en ;
-    skos:definition "sandwiches"@en ;
+    skos:prefLabel "sandwiches" ;
+    skos:definition "sandwiches" ;
     skos:broader recipes:MainCourse .
 
 # Side dish
 recipes:SideDish a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "side dish"@en ;
-    skos:definition "side dish"@en .
+    skos:prefLabel "side dish" ;
+    skos:definition "side dish" .
 
 # Soups
 recipes:Soups a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "soups"@en ;
-    skos:definition "soups"@en .
+    skos:prefLabel "soups" ;
+    skos:definition "soups" .
 
 # Starter
 recipes:Starter a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "starter"@en ;
-    skos:definition "starter"@en .
+    skos:prefLabel "starter" ;
+    skos:definition "starter" .
 
 # Sweets
 recipes:Sweets a :RecipeCategory, skos:Concept ;
     skos:inScheme recipes:RecipeCategoriesThesaurus ;
-    skos:prefLabel "sweets"@en ;
-    skos:definition "sweets"@en .
+    skos:prefLabel "sweets" ;
+    skos:definition "sweets" .
