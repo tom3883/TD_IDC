@@ -3,7 +3,11 @@ from rdflib import Graph
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
 g = Graph()
+g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_schema.ttl")
+g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_product_categories.ttl")
+g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_categories.ttl")
 
 origins = [
     "http://localhost",
@@ -19,6 +23,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/")
+async def root():
+    print("--- printing raw triples ---")
+    for s, p, o in g:
+        print((s, p, o))
+    return {"result" : "done"}
 
 @app.get("/getProducts")
 async def root():
@@ -41,14 +52,18 @@ async def root():
 @app.get("/getRecipes/{recipe_name}")
 async def read_user(recipe_name: str):
 
-    g = Graph()
     qres = g.query(
         f"""
         PREFIX : <http://recipes-project.com/schema#>
-        SELECT ?recipeName
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+        SELECT  ?recipeName ?dishType
         WHERE {{
+            ?c a :RecipeCategory ;
+            skos:prefLabel ?dishType .
             SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
-                ?recipe :name ?recipeName .
+                ?recipe :name ?recipeName ;
+                :recipeCategory ?dishType .
             }}
         }}
         """
@@ -56,7 +71,6 @@ async def read_user(recipe_name: str):
 
     results = []
     for row in qres:
-        results.append(row.recipeName)
-        print(row.recipeName)
+        results.append([row.recipeName, row.dishType])
 
     return {"results": results}
