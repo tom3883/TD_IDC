@@ -7,7 +7,7 @@ CONSTRUCT {
     ?recipe a :Recipe .
     ?recipe :name ?recipeName .
     ?recipe :recipeIngredient ?food .
-    ?recipe :recipeCategory ?c .
+    ?recipe :recipeCategory ?dishType .
     ?recipe :healthLabels ?healthLabels .
     ?recipe :calories ?calories .
 
@@ -18,6 +18,4 @@ CONSTRUCT {
     ?recipe api:dishType ?dishType .
     ?recipe api:healthLabels ?healthLabels .
     ?recipe api:calories ?calories .
-    ?c a :RecipeCategory ;
-    skos:prefLabel ?dishType .
 }
