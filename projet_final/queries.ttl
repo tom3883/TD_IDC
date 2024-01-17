@@ -15,3 +15,39 @@ WHERE {
         :recipeCategory ?dishType .
     }
 }
+
+
+##############################
+## perform the post-processing of the annotated data in order to extract only the products of the category dbo:Food
+##############################
+
+PREFIX db: <http://dbpedia.org/resource/>
+PREFIX s: <http://recipes-project.com/schema/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <http://recipes-project.com/>
+
+CONSTRUCT {
+  ?product s:productName ?productName ;
+	s:brandName ?brandName;
+	s:categoryName ?categoryName;
+	s:price ?price;
+               s:deduced_type ?dbpediaResource .
+  ?dbpediaResource rdf:type ?y .
+  ?y rdfs:label "Food"@en .
+}
+WHERE {
+  ?product s:productName ?productName ;
+	s:brandName ?brandName;
+	s:categoryName ?categoryName;
+	s:price ?price;
+               s:deduced_type ?dbpediaResource .
+
+  FILTER EXISTS {
+    SERVICE <http://dbpedia.org/sparql> {
+      ?dbpediaResource rdf:type ?y .
+      ?y rdfs:label "Food"@en .
+    }
+  }
+}
