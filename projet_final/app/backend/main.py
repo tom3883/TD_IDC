@@ -78,3 +78,28 @@ async def read_user(recipe_name: str):
         results.append([row.recipeName, row.dishType])
 
     return {"results": results}
+
+@app.get("/v2/getRecipes/{recipe_name}")
+async def read_user(recipe_name: str):
+
+    qres = g.query(
+        f"""
+        PREFIX : <http://recipes-project.com/schema#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+        SELECT ?recipeName ?dishType
+        WHERE {{
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
+                ?recipe :name ?recipeName ;
+                :recipeCategory ?dishType .
+            }}
+        }}
+        """
+    )
+
+    results = []
+    for row in qres:
+        results.append([row.recipeName, row.dishType])
+
+    return results
+

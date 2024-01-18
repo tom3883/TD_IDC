@@ -9,11 +9,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RecipeService {
 
-  private recipesUrl = 'http://127.0.0.1:8000/test';
+  private recipesUrl = 'http://localhost:8000/v2/getRecipes/cake';
 
   constructor(private http: HttpClient) { }
 
   getRecipes(): Observable<Recipe[]> {
     return this.http.get<Recipe[]>(this.recipesUrl);
   }
+
+  
 }
