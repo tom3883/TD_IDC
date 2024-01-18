@@ -91,3 +91,19 @@ WHERE {
     }
   }
 }
+
+
+##############################
+## construct a graph containing all the data about Brands
+##############################
+
+PREFIX : <http://recipes-project.com/schema/>
+PREFIX brand: <http://recipes-project.com/brand/>
+
+CONSTRUCT {
+  ?brandUri brand:brandName ?brandName .
+}
+WHERE {
+  ?product :brandName ?brandName .
+  BIND(IRI(CONCAT("http://recipes-project.com/brand/", REPLACE(STR(?brandName), "[^a-zA-Z0-9]", ""))) AS ?brandUri)
+}

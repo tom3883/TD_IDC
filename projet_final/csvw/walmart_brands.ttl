@@ -1,0 +1,2596 @@
+@prefix ns1: <http://recipes-project.com/brand/> .
+
+
+<http://recipes-project.com/brand/Castello> ns1:brandName "Castello" .
+
+ns1:AlFresco ns1:brandName "Al Fresco" .
+
+ns1:19CRIMES ns1:brandName "19 CRIMES" .
+
+ns1:4505 ns1:brandName "4505" .
+
+ns1:VVSupremo ns1:brandName "V&V Supremo" .
+
+ns1:Morales ns1:brandName "Morales" .
+
+ns1:AnzioSons ns1:brandName "Anzio & Sons" .
+
+ns1:UrbanAccents ns1:brandName "Urban Accents" .
+
+ns1:Aidells ns1:brandName "Aidells" .
+
+ns1:OldFashionHearth ns1:brandName "Old Fashion Hearth" .
+
+ns1:WhiteClaw ns1:brandName "White Claw" .
+
+ns1:HARISON ns1:brandName "HARISON" .
+
+ns1:SieteFamilyFoods ns1:brandName "Siete Family Foods" .
+
+ns1:Lakanto ns1:brandName "Lakanto" .
+
+ns1:Karma ns1:brandName "Karma" .
+
+ns1:MenageaTrois ns1:brandName "Menage a Trois" .
+
+ns1:CountryTime ns1:brandName "Country Time" .
+
+ns1:DreamBone ns1:brandName "DreamBone" .
+
+ns1:Mentos ns1:brandName "Mentos" .
+
+ns1:Philadelphia ns1:brandName "Philadelphia" .
+
+ns1:TWIX ns1:brandName "TWIX" .
+
+ns1:Tillamook ns1:brandName "Tillamook" .
+
+ns1:Prego ns1:brandName "Prego" .
+
+ns1:Munchies ns1:brandName "Munchies" .
+
+ns1:FOCO ns1:brandName "FOCO" .
+
+ns1:BRCCESPCREAM ns1:brandName "BRCC-ESP-CREAM" .
+
+ns1:TexasPete ns1:brandName "Texas Pete" .
+
+ns1:Zachary ns1:brandName "Zachary" .
+
+ns1:ArdensGarden ns1:brandName "Arden's Garden" .
+
+ns1:LaLas ns1:brandName "La La's" .
+
+ns1:HealthAde ns1:brandName "Health-Ade" .
+
+ns1:FoodforLife ns1:brandName "Food for Life" .
+
+ns1:BetterThanBouillon ns1:brandName "Better Than Bouillon" .
+
+ns1:Thatsit ns1:brandName "That's it." .
+
+ns1:AppleSmoked ns1:brandName "Apple Smoked" .
+
+ns1:CAYMANJACK ns1:brandName "CAYMAN JACK" .
+
+ns1:WholeEarthSweetener ns1:brandName "Whole Earth Sweetener" .
+
+ns1:PACIFICO ns1:brandName "PACIFICO" .
+
+ns1:GloriaJeansCoffees ns1:brandName "Gloria Jean's Coffees" .
+
+ns1:Luzianne ns1:brandName "Luzianne" .
+
+ns1:WAYTOCELEBRATE ns1:brandName "WAY TO CELEBRATE!" .
+
+ns1:Landana ns1:brandName "Landana" .
+
+ns1:TheGreekGods ns1:brandName "The Greek Gods" .
+
+ns1:Bertolli ns1:brandName "Bertolli" .
+
+ns1:OzarkTrail ns1:brandName "Ozark Trail" .
+
+ns1:ROBERTMONDAVI ns1:brandName "ROBERT MONDAVI" .
+
+ns1:BrighthouseOrganics ns1:brandName "Brighthouse Organics" .
+
+ns1:AirHeads ns1:brandName "AirHeads" .
+
+ns1:SoDelicious ns1:brandName "So Delicious" .
+
+ns1:Minute ns1:brandName "Minute" .
+
+ns1:Sunbeam ns1:brandName "Sunbeam" .
+
+ns1:Koia ns1:brandName "Koia" .
+
+ns1:Roca ns1:brandName "Roca" .
+
+ns1:Mezzetta ns1:brandName "Mezzetta" .
+
+ns1:Takis ns1:brandName "Takis" .
+
+ns1:NineChef ns1:brandName "NineChef" .
+
+ns1:GreatValue ns1:brandName "Great Value" .
+
+ns1:Velveeta ns1:brandName "Velveeta" .
+
+ns1:SantaCruzOrganic ns1:brandName "Santa Cruz Organic" .
+
+ns1:JOLLYTIME ns1:brandName "JOLLY TIME" .
+
+ns1:RobertMondaviPrivateSelection ns1:brandName "Robert Mondavi Private Selection" .
+
+ns1:RiceARoni ns1:brandName "Rice-A-Roni" .
+
+ns1:ChexMix ns1:brandName "Chex Mix" .
+
+ns1:TimHortons ns1:brandName "Tim Hortons" .
+
+ns1:LaFe ns1:brandName "La Fe" .
+
+ns1:Nissin ns1:brandName "Nissin" .
+
+ns1:FreshCravings ns1:brandName "Fresh Cravings" .
+
+ns1:ENJOY ns1:brandName "ENJOY" .
+
+ns1:Dots ns1:brandName "Dots" .
+
+ns1:Popcornopolis ns1:brandName "Popcornopolis" .
+
+ns1:CapriSun ns1:brandName "Capri Sun" .
+
+ns1:OdomsTennesseePride ns1:brandName "Odom's Tennessee Pride" .
+
+ns1:Redondos ns1:brandName "Redondo's" .
+
+ns1:Bunny ns1:brandName "Bunny" .
+
+ns1:PushPop ns1:brandName "Push Pop" .
+
+ns1:SkinnyPop ns1:brandName "SkinnyPop" .
+
+ns1:KEKumbucha ns1:brandName "KГ–E Kumbucha" .
+
+ns1:HiddenValley ns1:brandName "Hidden Valley" .
+
+ns1:Torani ns1:brandName "Torani" .
+
+ns1:PapaNicholasCoffee ns1:brandName "PapaNicholas Coffee" .
+
+ns1:AstraBella ns1:brandName "Astra Bella" .
+
+ns1:DreamField ns1:brandName "DreamField" .
+
+ns1:AustinHope ns1:brandName "Austin Hope" .
+
+ns1:Funyuns ns1:brandName "Funyuns" .
+
+ns1:Idahoan ns1:brandName "Idahoan" .
+
+ns1:Entenmanns ns1:brandName "Entenmann's" .
+
+ns1:SuddenlySalad ns1:brandName "Suddenly Salad" .
+
+ns1:Daiya ns1:brandName "Daiya" .
+
+ns1:Nestl ns1:brandName "NestlГ©" .
+
+ns1:Athenos ns1:brandName "Athenos" .
+
+ns1:TacoBell ns1:brandName "Taco Bell" .
+
+ns1:TopBrass ns1:brandName "Top Brass" .
+
+ns1:Banza ns1:brandName "Banza" .
+
+ns1:Richardson ns1:brandName "Richardson" .
+
+ns1:Soldanza ns1:brandName "Soldanza" .
+
+ns1:SunbeltBakery ns1:brandName "Sunbelt Bakery" .
+
+ns1:MuddyBuddies ns1:brandName "Muddy Buddies" .
+
+ns1:TootsieRoll ns1:brandName "Tootsie Roll" .
+
+ns1:Johnsonville ns1:brandName "Johnsonville" .
+
+ns1:SMARTONES ns1:brandName "SMART ONES" .
+
+ns1:Ninja ns1:brandName "Ninja" .
+
+ns1:SIMI ns1:brandName "SIMI" .
+
+ns1:Friedas ns1:brandName "Frieda's" .
+
+ns1:BlackRifleCoffee ns1:brandName "Black Rifle Coffee" .
+
+ns1:LeelanauCellars ns1:brandName "Leelanau Cellars" .
+
+ns1:ICEE ns1:brandName "ICEE" .
+
+ns1:OreIda ns1:brandName "Ore-Ida" .
+
+ns1:Multipack ns1:brandName "Multipack" .
+
+ns1:Sabrett ns1:brandName "Sabrett" .
+
+ns1:ActII ns1:brandName "Act II" .
+
+ns1:320098 ns1:brandName "320098" .
+
+ns1:LAKEWOODJUICES ns1:brandName "LAKEWOOD JUICES" .
+
+ns1:YuenglingTraditionalLager ns1:brandName "Yuengling Traditional Lager" .
+
+ns1:Hartz ns1:brandName "Hartz" .
+
+ns1:Danimals ns1:brandName "Danimals" .
+
+ns1:Mamba ns1:brandName "Mamba" .
+
+ns1:Field ns1:brandName "Field" .
+
+ns1:Decoy ns1:brandName "Decoy" .
+
+ns1:Pace ns1:brandName "Pace" .
+
+ns1:ChowMein ns1:brandName "Chow Mein" .
+
+ns1:DanActive ns1:brandName "DanActive" .
+
+ns1:SnydersofHanover ns1:brandName "Snyder's of Hanover" .
+
+ns1:TheCookieDoughCafe ns1:brandName "The Cookie Dough Cafe" .
+
+ns1:Thomas ns1:brandName "Thomas'" .
+
+ns1:OakLeafVineyards ns1:brandName "Oak Leaf Vineyards" .
+
+ns1:Pillsbury ns1:brandName "Pillsbury" .
+
+ns1:Raymundos ns1:brandName "Raymundo's" .
+
+ns1:JuanValdez ns1:brandName "Juan Valdez" .
+
+ns1:Yowie ns1:brandName "Yowie" .
+
+ns1:GreenMountainCoffee ns1:brandName "Green Mountain Coffee" .
+
+ns1:BakenEts ns1:brandName "Baken-Ets" .
+
+ns1:Luxury ns1:brandName "Luxury" .
+
+ns1:ABOGear ns1:brandName "ABO Gear" .
+
+ns1:WinkyBrand ns1:brandName "Winky Brand" .
+
+ns1:LaVaquita ns1:brandName "La Vaquita" .
+
+ns1:OldWisconsin ns1:brandName "Old Wisconsin" .
+
+ns1:Master ns1:brandName "Master" .
+
+ns1:Cheetos ns1:brandName "Cheetos" .
+
+ns1:Hunts ns1:brandName "Hunt's" .
+
+ns1:Ricos ns1:brandName "Ricos" .
+
+ns1:Mission ns1:brandName "Mission" .
+
+ns1:GOYA ns1:brandName "GOYA" .
+
+ns1:FrancisFordCoppolaWinery ns1:brandName "Francis Ford Coppola Winery" .
+
+ns1:Nathans ns1:brandName "Nathan's" .
+
+ns1:429252 ns1:brandName "429252" .
+
+ns1:Tastee ns1:brandName "Tastee" .
+
+ns1:Kraft ns1:brandName "Kraft" .
+
+ns1:ASSORTMENTS ns1:brandName "ASSORTMENTS" .
+
+ns1:FrankFamilyVineyards ns1:brandName "Frank Family Vineyards" .
+
+ns1:FIELDPACKUNBRANDED ns1:brandName "FIELDPACK UNBRANDED" .
+
+ns1:Larabar ns1:brandName "Larabar" .
+
+ns1:WHOLLYGUACAMOLE ns1:brandName "WHOLLY GUACAMOLE" .
+
+ns1:LittleHug ns1:brandName "Little Hug" .
+
+ns1:Friendlys ns1:brandName "Friendly's" .
+
+ns1:CultCoffee ns1:brandName "Cult Coffee" .
+
+ns1:Gourmia ns1:brandName "Gourmia" .
+
+ns1:BellaBolle ns1:brandName "Bella Bolle" .
+
+ns1:JuicyJuice ns1:brandName "Juicy Juice" .
+
+ns1:RapSnacks ns1:brandName "Rap Snacks" .
+
+ns1:HomeMaker ns1:brandName "HomeMaker" .
+
+ns1:Munch ns1:brandName "Munch" .
+
+ns1:BeeInternational ns1:brandName "Bee International" .
+
+ns1:Badia ns1:brandName "Badia" .
+
+ns1:Ruffles ns1:brandName "Ruffles" .
+
+ns1:OscarMayer ns1:brandName "Oscar Mayer" .
+
+ns1:SanGiorgio ns1:brandName "San Giorgio" .
+
+ns1:Dennisons ns1:brandName "Dennison's" .
+
+ns1:TwistedRanch ns1:brandName "Twisted Ranch" .
+
+ns1:ThePerfectGranola ns1:brandName "The Perfect Granola" .
+
+ns1:PeetsCoffee ns1:brandName "Peet's Coffee" .
+
+ns1:PioneerBrand ns1:brandName "Pioneer Brand" .
+
+ns1:Raffaello ns1:brandName "Raffaello" .
+
+ns1:Funko ns1:brandName "Funko" .
+
+ns1:PediaSure ns1:brandName "PediaSure" .
+
+ns1:CafBrew ns1:brandName "CafГ© Brew" .
+
+ns1:Julios ns1:brandName "Julio's" .
+
+ns1:MonteBene ns1:brandName "Monte Bene" .
+
+ns1:SutterHome ns1:brandName "Sutter Home" .
+
+ns1:Blackburns ns1:brandName "Blackburn's" .
+
+ns1:CathedralCity ns1:brandName "Cathedral City" .
+
+ns1:Galbani ns1:brandName "Galbani" .
+
+ns1:AmysKitchen ns1:brandName "Amy's Kitchen" .
+
+ns1:ColorItCandy ns1:brandName "Color It Candy" .
+
+ns1:CreateATreat ns1:brandName "Create A Treat" .
+
+ns1:Warheads ns1:brandName "Warheads" .
+
+ns1:PomWonderful ns1:brandName "Pom Wonderful" .
+
+ns1:Sweetshop ns1:brandName "Sweetshop" .
+
+ns1:Butterball ns1:brandName "Butterball" .
+
+ns1:CarlosV ns1:brandName "Carlos V" .
+
+ns1:CHANDON ns1:brandName "CHANDON" .
+
+ns1:Gwaltney ns1:brandName "Gwaltney" .
+
+ns1:AlmondHome ns1:brandName "Almond Home" .
+
+ns1:Martins ns1:brandName "Martin's" .
+
+ns1:Classico ns1:brandName "Classico" .
+
+ns1:CelestialSeasonings ns1:brandName "Celestial Seasonings" .
+
+ns1:DelFuerte ns1:brandName "Del Fuerte" .
+
+ns1:Variety ns1:brandName "Variety" .
+
+ns1:HispanicCandy ns1:brandName "Hispanic Candy" .
+
+ns1:Kikuet ns1:brandName "Kikuet" .
+
+ns1:Jiffy ns1:brandName "Jiffy" .
+
+ns1:ZOA ns1:brandName "ZOA" .
+
+ns1:Zoup ns1:brandName "Zoup!" .
+
+ns1:MamaRosies ns1:brandName "Mama Rosie's" .
+
+ns1:CinnamonToastCrunch ns1:brandName "Cinnamon Toast Crunch" .
+
+ns1:LaModerna ns1:brandName "La Moderna" .
+
+ns1:CandyBites ns1:brandName "Candy Bites" .
+
+ns1:Guerrero ns1:brandName "Guerrero" .
+
+ns1:SlimJim ns1:brandName "Slim Jim" .
+
+ns1:CampbellsSoupontheGo ns1:brandName "Campbell's Soup on the Go" .
+
+ns1:KingsHawaiian ns1:brandName "King's Hawaiian" .
+
+ns1:Zapps ns1:brandName "Zapp's" .
+
+ns1:PastaRoni ns1:brandName "Pasta Roni" .
+
+ns1:Tropical ns1:brandName "Tropical" .
+
+ns1:PureProtein ns1:brandName "Pure Protein" .
+
+ns1:SourPunch ns1:brandName "Sour Punch" .
+
+ns1:Mainstays ns1:brandName "Mainstays" .
+
+ns1:Minecraft ns1:brandName "Minecraft" .
+
+ns1:88Acres ns1:brandName "88 Acres" .
+
+ns1:Botticelli ns1:brandName "Botticelli" .
+
+ns1:NESCAFTastersChoice ns1:brandName "NESCAFГ‰ Taster's Choice" .
+
+ns1:Sabra ns1:brandName "Sabra" .
+
+ns1:HandiSnacks ns1:brandName "Handi-Snacks" .
+
+ns1:RiceKrispiesTreats ns1:brandName "Rice Krispies Treats" .
+
+ns1:CampbellsHealthyRequest ns1:brandName "CampbellвЂ™s Healthy Request" .
+
+ns1:Applegate ns1:brandName "Applegate" .
+
+ns1:Crepini ns1:brandName "Crepini" .
+
+ns1:PackedParty ns1:brandName "Packed Party" .
+
+ns1:ReaLime ns1:brandName "ReaLime" .
+
+ns1:Bitsys ns1:brandName "Bitsy's" .
+
+ns1:AuntHatties ns1:brandName "Aunt Hattie's" .
+
+ns1:DotsPretzels ns1:brandName "Dot's Pretzels" .
+
+ns1:Wylers ns1:brandName "Wyler's" .
+
+ns1:PretzelCrisps ns1:brandName "Pretzel Crisps" .
+
+ns1:NewmansOwn ns1:brandName "Newman's Own" .
+
+ns1:Reddiwip ns1:brandName "Reddi-wip" .
+
+ns1:CampbellsCondensed ns1:brandName "Campbell's Condensed" .
+
+ns1:BabyBottle ns1:brandName "Baby Bottle" .
+
+ns1:Jade ns1:brandName "Jade" .
+
+ns1:Greco ns1:brandName "Greco" .
+
+ns1:ROSCATO ns1:brandName "ROSCATO" .
+
+ns1:Papas ns1:brandName "Papas" .
+
+ns1:Skinner ns1:brandName "Skinner" .
+
+ns1:ChefWoo ns1:brandName "Chef Woo" .
+
+ns1:TADIN ns1:brandName "TADIN" .
+
+ns1:KernelSeasons ns1:brandName "Kernel Season's" .
+
+ns1:ChuaoChocolatier ns1:brandName "Chuao Chocolatier" .
+
+ns1:MrBeast ns1:brandName "Mr Beast" .
+
+ns1:MaxwellHouse ns1:brandName "Maxwell House" .
+
+ns1:LiveCarbSmart ns1:brandName "Live Carb Smart" .
+
+ns1:Woebers ns1:brandName "Woeber's" .
+
+ns1:popchips ns1:brandName "popchips" .
+
+ns1:McBrideSisters ns1:brandName "McBride Sisters" .
+
+ns1:Verole ns1:brandName "Verole" .
+
+ns1:BallPark ns1:brandName "Ball Park" .
+
+ns1:Snickers ns1:brandName "Snickers" .
+
+ns1:BlackCreek ns1:brandName "Black Creek" .
+
+ns1:ChameleonColdBrew ns1:brandName "Chameleon Cold-Brew" .
+
+ns1:Roth ns1:brandName "Roth" .
+
+ns1:FAGE ns1:brandName "FAGE" .
+
+ns1:OurLittleRebellion ns1:brandName "Our Little Rebellion" .
+
+ns1:Ferrante ns1:brandName "Ferrante" .
+
+ns1:LandOLakes ns1:brandName "Land O'Lakes" .
+
+ns1:OUTDOOR ns1:brandName "OUTDOOR" .
+
+ns1:Sabritas ns1:brandName "Sabritas" .
+
+ns1:BELLAROSA ns1:brandName "BELLA ROSA" .
+
+ns1:yellowtail ns1:brandName "[yellow tail]" .
+
+ns1:Kiolbassa ns1:brandName "Kiolbassa" .
+
+ns1:Martinellis ns1:brandName "Martinelli's" .
+
+ns1:LaBanderita ns1:brandName "La Banderita" .
+
+ns1:BrightFarms ns1:brandName "BrightFarms" .
+
+ns1:HillshireFarm ns1:brandName "Hillshire Farm" .
+
+ns1:Zevia ns1:brandName "Zevia" .
+
+ns1:PEZ ns1:brandName "PEZ" .
+
+ns1:Fiesta ns1:brandName "Fiesta" .
+
+ns1:FerreroCollection ns1:brandName "Ferrero Collection" .
+
+ns1:Schwebels ns1:brandName "Schwebel's" .
+
+ns1:KozyShack ns1:brandName "Kozy ShackВ®" ;
+ns1:brandName "Kozy Shack" .
+
+ns1:BottleCap ns1:brandName "Bottle Cap" .
+
+ns1:Tapatio ns1:brandName "Tapatio" .
+
+ns1:BonafideProvisions ns1:brandName "Bonafide Provisions" .
+
+ns1:LibertyCreek ns1:brandName "Liberty Creek" .
+
+ns1:Skittles ns1:brandName "Skittles" .
+
+ns1:Tastykake ns1:brandName "Tastykake" .
+
+ns1:GreatValueOrganic ns1:brandName "Great Value Organic" .
+
+ns1:FOXYORGANICS ns1:brandName "FOXY ORGANICS" .
+
+ns1:Stumptown ns1:brandName "Stumptown" .
+
+ns1:DOLCIFRUTTA ns1:brandName "DOLCI FRUTTA" .
+
+ns1:FerreroRondnoir ns1:brandName "Ferrero Rondnoir" .
+
+ns1:Dove ns1:brandName "Dove" .
+
+ns1:BudLightSeltzer ns1:brandName "Bud Light Seltzer" .
+
+ns1:4CFoods ns1:brandName "4C Foods" .
+
+ns1:GeneralMillsMultipleBrands ns1:brandName "General Mills Multiple Brands" .
+
+ns1:Nongshim ns1:brandName "Nongshim" .
+
+ns1:Creamette ns1:brandName "Creamette" .
+
+ns1:CupcakeVineyards ns1:brandName "CupcakeВ® Vineyards" ;
+ns1:brandName "Cupcake Vineyards" .
+
+ns1:ConcordConfections ns1:brandName "Concord Confections" .
+
+ns1:Chesters ns1:brandName "Chester's" .
+
+ns1:Swanson ns1:brandName "Swanson" .
+
+ns1:Barilla ns1:brandName "Barilla" ;
+ns1:brandName "BarillaГ‚В®" .
+
+ns1:LaAbuela ns1:brandName "La Abuela" .
+
+ns1:Absolutely ns1:brandName "Absolutely" .
+
+ns1:Boursin ns1:brandName "Boursin" .
+
+ns1:ConcordFoods ns1:brandName "Concord Foods" .
+
+ns1:SOCIAL ns1:brandName "SOCIAL" .
+
+ns1:LilysSweets ns1:brandName "Lily's Sweets" .
+
+ns1:EarlCampbells ns1:brandName "Earl Campbell's" .
+
+ns1:TortillaLand ns1:brandName "TortillaLand" .
+
+ns1:FruitRollUps ns1:brandName "Fruit Roll-Ups" .
+
+ns1:Stacys ns1:brandName "Stacy's" .
+
+ns1:CrunchnMunch ns1:brandName "Crunch 'n Munch" .
+
+ns1:ElPopular ns1:brandName "El Popular" .
+
+ns1:Stagg ns1:brandName "Stagg" .
+
+ns1:MrsButterworths ns1:brandName "Mrs. Butterworth's" .
+
+ns1:STANLEY ns1:brandName "STANLEY" .
+
+ns1:Jovial ns1:brandName "Jovial" .
+
+ns1:RoedererEstate ns1:brandName "Roederer Estate" .
+
+ns1:MoonshineSweetTea ns1:brandName "Moonshine Sweet Tea" .
+
+ns1:TopoChicoHardSeltzerMargaritaVarietyPack ns1:brandName "Topo Chico Hard Seltzer Margarita Variety Pack" .
+
+ns1:Lactaid ns1:brandName "Lactaid" .
+
+ns1:Crunch ns1:brandName "Crunch" .
+
+ns1:DrQ ns1:brandName "Dr. Q" .
+
+ns1:DonFranciscosCoffee ns1:brandName "Don Francisco's Coffee" .
+
+ns1:MikeandIke ns1:brandName "Mike and Ike" .
+
+ns1:Gordos ns1:brandName "Gordo's" .
+
+ns1:JellyBelly ns1:brandName "Jelly Belly" .
+
+ns1:SeedsOfChange ns1:brandName "Seeds Of Change" .
+
+ns1:Activia ns1:brandName "Activia" .
+
+ns1:Chobani ns1:brandName "Chobani" .
+
+ns1:HamburgerHelper ns1:brandName "Hamburger Helper" .
+
+ns1:OriginalDonutShop ns1:brandName "Original Donut Shop" .
+
+ns1:Generic ns1:brandName "Generic" .
+
+ns1:Colliders ns1:brandName "Collidersв„ў" .
+
+ns1:Paldo ns1:brandName "Paldo" .
+
+ns1:Regent ns1:brandName "Regent" .
+
+ns1:HomeEssentials ns1:brandName "Home Essentials" .
+
+ns1:Lipton ns1:brandName "Lipton" .
+
+ns1:Merci ns1:brandName "Merci" .
+
+ns1:FarmerJohn ns1:brandName "Farmer John" .
+
+ns1:Campbells100TomatoJuice ns1:brandName "Campbell's 100% Tomato Juice" .
+
+ns1:Gevalia ns1:brandName "Gevalia" .
+
+ns1:Jarlsberg ns1:brandName "Jarlsberg" .
+
+ns1:DeCecco ns1:brandName "De Cecco" .
+
+ns1:Lakewood ns1:brandName "Lakewood" .
+
+ns1:Cheribundi ns1:brandName "Cheribundi" .
+
+ns1:Butter ns1:brandName "Butter" .
+
+ns1:IncrediBowl ns1:brandName "Incredi-Bowl" .
+
+ns1:SunChips ns1:brandName "SunChips" .
+
+ns1:VitaCup ns1:brandName "VitaCup" .
+
+ns1:Horizon ns1:brandName "Horizon" .
+
+ns1:Trolli ns1:brandName "Trolli" .
+
+ns1:Milo ns1:brandName "Milo" .
+
+ns1:OregonChai ns1:brandName "Oregon Chai" .
+
+ns1:WhiteCastle ns1:brandName "White Castle" .
+
+ns1:Kerrygold ns1:brandName "Kerrygold" .
+
+ns1:Spaten ns1:brandName "Spaten" .
+
+ns1:Mothers ns1:brandName "Mothers" .
+
+ns1:WalmartBakery ns1:brandName "Walmart Bakery" .
+
+ns1:GENERAL ns1:brandName "GENERAL" .
+
+ns1:MarthaStewartKitchen ns1:brandName "Martha Stewart Kitchen" .
+
+ns1:Pinkfong ns1:brandName "Pinkfong" .
+
+ns1:NanaBs ns1:brandName "Nana B's" .
+
+ns1:Michelinas ns1:brandName "Michelina's" .
+
+ns1:LotusFoods ns1:brandName "Lotus Foods" .
+
+ns1:Solely ns1:brandName "Solely" .
+
+ns1:Ronco ns1:brandName "Ronco" .
+
+ns1:FindersKeepers ns1:brandName "Finders Keepers" .
+
+ns1:PattiLaBelle ns1:brandName "Patti LaBelle" .
+
+ns1:PopBottle ns1:brandName "Pop & Bottle" .
+
+ns1:MARTINELLISGOLDMEDAL ns1:brandName "MARTINELLI'S GOLD MEDALГ‚В®" .
+
+ns1:LorAnnOils ns1:brandName "LorAnn Oils" .
+
+ns1:FruitoftheEarth ns1:brandName "Fruit of the Earth" .
+
+ns1:barkTHINS ns1:brandName "barkTHINS" .
+
+ns1:VEUVECLICQUOT ns1:brandName "VEUVE CLICQUOT" .
+
+ns1:MUNCHOS ns1:brandName "MUNCHOS" .
+
+ns1:OceanSpray ns1:brandName "Ocean Spray" .
+
+ns1:ElLeoncito ns1:brandName "El Leoncito" .
+
+ns1:Dulzura ns1:brandName "Dulzura" .
+
+ns1:NakedJuice ns1:brandName "Naked Juice" .
+
+ns1:DarkHorse ns1:brandName "Dark Horse" .
+
+ns1:NatureValley ns1:brandName "Nature Valley" .
+
+ns1:ChiChis ns1:brandName "Chi-Chi's" .
+
+ns1:BeyondRaw ns1:brandName "Beyond Raw" .
+
+ns1:Sinaloa ns1:brandName "Sinaloa" .
+
+ns1:Detour ns1:brandName "Detour" .
+
+ns1:ChateauSteMichelle ns1:brandName "Chateau Ste. Michelle" .
+
+ns1:EarthBalance ns1:brandName "Earth Balance" .
+
+ns1:Beanos ns1:brandName "Beano's" .
+
+ns1:Gunnoes ns1:brandName "Gunnoe's" .
+
+ns1:Clamato ns1:brandName "Clamato" .
+
+ns1:Tea5 ns1:brandName "Tea5" .
+
+ns1:KITKAT ns1:brandName "KITKAT" .
+
+ns1:EVRI ns1:brandName "EVRI" .
+
+ns1:GeneralMills ns1:brandName "General Mills" .
+
+ns1:LAKEWOOD ns1:brandName "LAKEWOODВ®" .
+
+ns1:Glucerna ns1:brandName "Glucerna" .
+
+ns1:ProduceUnbranded ns1:brandName "Produce Unbranded" .
+
+ns1:SimplyAsia ns1:brandName "Simply Asia" .
+
+ns1:Cadbury ns1:brandName "Cadbury" .
+
+ns1:JetPuffed ns1:brandName "Jet-Puffed" .
+
+ns1:LaMexicana ns1:brandName "La Mexicana" .
+
+ns1:RHODES ns1:brandName "RHODES" .
+
+ns1:BlueDiamond ns1:brandName "Blue Diamond" .
+
+ns1:ImperialSugar ns1:brandName "Imperial Sugar" .
+
+ns1:VanCamps ns1:brandName "Van Camp's" .
+
+ns1:MinuteMaid ns1:brandName "Minute Maid" .
+
+ns1:Splenda ns1:brandName "Splenda" .
+
+ns1:Imperial ns1:brandName "Imperial" .
+
+ns1:Bubbas ns1:brandName "BubbaвЂ™s" .
+
+ns1:Carnation ns1:brandName "Carnation" .
+
+ns1:DollarItemDirect ns1:brandName "DollarItemDirect" .
+
+ns1:Smartfood ns1:brandName "Smartfood" .
+
+ns1:HIPPEAS ns1:brandName "HIPPEAS" .
+
+ns1:Dannon ns1:brandName "Dannon" .
+
+ns1:SunMaid ns1:brandName "Sun-Maid" .
+
+ns1:FincaNueva ns1:brandName "Finca Nueva" .
+
+ns1:Tropicana ns1:brandName "Tropicana" .
+
+ns1:JennieOTurkeyStore ns1:brandName "Jennie-O Turkey Store" .
+
+ns1:Borden ns1:brandName "Borden" .
+
+ns1:ChunkySoups ns1:brandName "Chunky Soups" .
+
+ns1:Starbucks ns1:brandName "Starbucks" .
+
+ns1:KettleFire ns1:brandName "Kettle & Fire" .
+
+ns1:Mueller ns1:brandName "Mueller" .
+
+ns1:ChappellHill ns1:brandName "Chappell Hill" .
+
+ns1:MrsWages ns1:brandName "Mrs. Wages" .
+
+ns1:Zanetti ns1:brandName "Zanetti" .
+
+ns1:TwistedTea ns1:brandName "Twisted Tea" .
+
+ns1:Sunsweet ns1:brandName "Sunsweet" .
+
+ns1:BoulderCanyon ns1:brandName "Boulder Canyon" .
+
+ns1:DOVEChocolate ns1:brandName "DOVE Chocolate" .
+
+ns1:DreamWhip ns1:brandName "Dream Whip" .
+
+ns1:BrickandMortarCoffee ns1:brandName "Brick and Mortar Coffee" .
+
+ns1:Sunnyvalley ns1:brandName "Sunnyvalley" .
+
+ns1:Sugardale ns1:brandName "Sugardale" .
+
+ns1:3Musketeers ns1:brandName "3 Musketeers" .
+
+ns1:ClifBar ns1:brandName "Clif Bar" .
+
+ns1:Yuban ns1:brandName "Yuban" .
+
+ns1:Frigo ns1:brandName "Frigo" .
+
+ns1:ASSORTED ns1:brandName "ASSORTED" .
+
+ns1:TheOriginalDonutShop ns1:brandName "The Original Donut Shop" .
+
+ns1:Glutino ns1:brandName "Glutino" .
+
+ns1:BlueBonnet ns1:brandName "Blue Bonnet" .
+
+ns1:Brownberry ns1:brandName "Brownberry" .
+
+ns1:CedarLane ns1:brandName "Cedar Lane" .
+
+ns1:Andre ns1:brandName "Andre" .
+
+ns1:SanLuis ns1:brandName "San Luis" .
+
+ns1:Abuelita ns1:brandName "Abuelita" .
+
+ns1:GreatValueMiraculous ns1:brandName "Great Value Miraculous" .
+
+ns1:Roses ns1:brandName "Rose's" .
+
+ns1:MISSION ns1:brandName "MISSION" .
+
+ns1:BrookeBond ns1:brandName "Brooke Bond" .
+
+ns1:Burton ns1:brandName "Burton" .
+
+ns1:Ratio ns1:brandName "Ratio" .
+
+ns1:simply ns1:brandName "simply..." .
+
+ns1:SwaggertysFarm ns1:brandName "Swaggerty's Farm" .
+
+ns1:MarkWest ns1:brandName "Mark West" .
+
+ns1:Icebreaker ns1:brandName "Icebreaker" .
+
+ns1:Toufayan ns1:brandName "Toufayan" .
+
+ns1:JiffyPop ns1:brandName "Jiffy Pop" .
+
+ns1:Twinings ns1:brandName "Twinings" .
+
+ns1:LogCabin ns1:brandName "Log Cabin" .
+
+ns1:HungryJack ns1:brandName "Hungry Jack" .
+
+ns1:Chifles ns1:brandName "Chifles" .
+
+ns1:WTRMLNWTR ns1:brandName "WTRMLN WTR" .
+
+ns1:PRQ ns1:brandName "PГ–RQ" .
+
+ns1:StellaRosa ns1:brandName "Stella Rosa" .
+
+ns1:Club ns1:brandName "Club" .
+
+ns1:Impossible ns1:brandName "Impossible" .
+
+ns1:CastellodelPoggio ns1:brandName "Castello del Poggio" .
+
+ns1:KeffaCoffee ns1:brandName "Keffa Coffee" .
+
+ns1:CheezIt ns1:brandName "Cheez-It" .
+
+ns1:PacificNaturalFoods ns1:brandName "Pacific Natural Foods" .
+
+ns1:Schneiders ns1:brandName "Schneider's" .
+
+ns1:AgaveInTheRaw ns1:brandName "Agave In The Raw" .
+
+ns1:BraveGoodKind ns1:brandName "Brave Good Kind" .
+
+ns1:ShinerBeer ns1:brandName "Shiner Beer" .
+
+ns1:CocoaPuffs ns1:brandName "Cocoa Puffs" .
+
+ns1:SunfoodSuperfoods ns1:brandName "Sunfood Superfoods" .
+
+ns1:Bisquick ns1:brandName "Bisquick" .
+
+ns1:Clio ns1:brandName "Clio" .
+
+ns1:CanyonBakehouse ns1:brandName "Canyon Bakehouse" .
+
+ns1:Turtles ns1:brandName "Turtles" .
+
+ns1:Jimmys ns1:brandName "Jimmy's" .
+
+ns1:CH ns1:brandName "C&H" .
+
+ns1:RemedyOrganics ns1:brandName "Remedy Organics" .
+
+ns1:Charms ns1:brandName "Charms" .
+
+ns1:Contadina ns1:brandName "Contadina" .
+
+ns1:CaribouCoffee ns1:brandName "Caribou Coffee" .
+
+ns1:OakLeafVineyardsSweets ns1:brandName "Oak LeafВ® Vineyards Sweets" .
+
+ns1:Feastables ns1:brandName "Feastables" .
+
+ns1:CrunchPak ns1:brandName "Crunch Pak" .
+
+ns1:LIGHTFIT ns1:brandName "LIGHT + FIT" .
+
+ns1:FOUNDATIONCOFFEECO ns1:brandName "FOUNDATION COFFEE CO." .
+
+ns1:Funables ns1:brandName "Funables" .
+
+ns1:HERSHEYSKISSES ns1:brandName "HERSHEY'S KISSES" .
+
+ns1:CazodeOro ns1:brandName "Cazo de Oro" .
+
+ns1:York ns1:brandName "York" .
+
+ns1:FreshProduce ns1:brandName "Fresh Produce" .
+
+ns1:UnReal ns1:brandName "UnReal" .
+
+ns1:ParentsChoice ns1:brandName "Parent's Choice" .
+
+ns1:RaosHomemade ns1:brandName "Rao's Homemade" .
+
+ns1:HomestyleBakes ns1:brandName "Homestyle Bakes" .
+
+ns1:Andes ns1:brandName "Andes" .
+
+ns1:Truvia ns1:brandName "Truvia" .
+
+ns1:Twizzlers ns1:brandName "Twizzlers" .
+
+ns1:Nickles ns1:brandName "Nickles" .
+
+ns1:DateLady ns1:brandName "Date Lady" .
+
+ns1:Domino ns1:brandName "Domino" .
+
+ns1:LittleDebbie ns1:brandName "Little Debbie" .
+
+ns1:SpaghettiOs ns1:brandName "SpaghettiOs" .
+
+ns1:CarloRossi ns1:brandName "Carlo Rossi" .
+
+ns1:Celentano ns1:brandName "Celentano" .
+
+ns1:CalifiaFarms ns1:brandName "Califia Farms" .
+
+ns1:OakFarmsDairy ns1:brandName "Oak Farms Dairy" .
+
+ns1:ConundrumWines ns1:brandName "Conundrum Wines" .
+
+ns1:Medelco ns1:brandName "Medelco" .
+
+ns1:Zummo ns1:brandName "Zummo" .
+
+ns1:ChefBoyardee ns1:brandName "Chef Boyardee" .
+
+ns1:Bakers ns1:brandName "Baker's" .
+
+ns1:Parkay ns1:brandName "Parkay" .
+
+ns1:SodaStream ns1:brandName "SodaStream" .
+
+ns1:ReadyPacFoods ns1:brandName "Ready Pac Foods" .
+
+ns1:MountainDew ns1:brandName "Mountain Dew" .
+
+ns1:BigelowTea ns1:brandName "Bigelow Tea" .
+
+ns1:BigSky ns1:brandName "Big Sky" .
+
+ns1:Iberia ns1:brandName "Iberia" .
+
+ns1:Truly ns1:brandName "Truly" .
+
+ns1:Budweiser ns1:brandName "Budweiser" .
+
+ns1:LaColombe ns1:brandName "La Colombe" .
+
+ns1:PikNik ns1:brandName "Pik-Nik" .
+
+ns1:JOSHCELLARSRESERVE ns1:brandName "JOSH CELLARS RESERVE" .
+
+ns1:LionCoffee ns1:brandName "Lion Coffee" .
+
+ns1:CampbellsChunky ns1:brandName "CampbellвЂ™s Chunky" .
+
+ns1:Azteca ns1:brandName "Azteca" .
+
+ns1:AngryOrchard ns1:brandName "Angry Orchard" .
+
+ns1:DrPepper ns1:brandName "Dr. Pepper" .
+
+ns1:PhillipsMushroomFarms ns1:brandName "Phillips Mushroom Farms" .
+
+ns1:MillerGenuineDraft ns1:brandName "Miller Genuine Draft" .
+
+ns1:ChocoMilk ns1:brandName "Choco Milk" .
+
+ns1:CameronsCoffee ns1:brandName "Cameron's Coffee" .
+
+ns1:HebrewNational ns1:brandName "Hebrew National" .
+
+ns1:Nasoya ns1:brandName "Nasoya" .
+
+ns1:Melitta ns1:brandName "Melitta" .
+
+ns1:CupNoodles ns1:brandName "Cup Noodles" .
+
+ns1:MiracleNoodle ns1:brandName "Miracle Noodle" .
+
+ns1:CafeLaLlave ns1:brandName "Cafe La Llave" .
+
+ns1:ChocoMaker ns1:brandName "ChocoMaker" .
+
+ns1:Butternut ns1:brandName "Butternut" .
+
+ns1:KettleBrand ns1:brandName "Kettle Brand" .
+
+ns1:JimmyJohns ns1:brandName "Jimmy John's" .
+
+ns1:CandyRific ns1:brandName "CandyRific" .
+
+ns1:Unisom ns1:brandName "Unisom" .
+
+ns1:KRUPS ns1:brandName "KRUPS" .
+
+ns1:AuntMillies ns1:brandName "Aunt Millie's" .
+
+ns1:Cacique ns1:brandName "Cacique" .
+
+ns1:YoMamasFoods ns1:brandName "Yo Mama's Foods" .
+
+ns1:CucinaAmore ns1:brandName "Cucina & Amore" .
+
+ns1:PearlMillingCompany ns1:brandName "Pearl Milling Company" .
+
+ns1:MAMA ns1:brandName "MAMA" .
+
+ns1:Silk ns1:brandName "Silk" .
+
+ns1:Tuttorosso ns1:brandName "Tuttorosso" .
+
+ns1:LICENSEDFRUITSNACKS ns1:brandName "LICENSED FRUIT SNACKS" .
+
+ns1:MillerLite ns1:brandName "Miller Lite" .
+
+ns1:RussellStover ns1:brandName "Russell Stover" .
+
+ns1:SummerWater ns1:brandName "Summer Water" .
+
+ns1:412176 ns1:brandName "412176" .
+
+ns1:SensiblePortions ns1:brandName "Sensible Portions" .
+
+ns1:RxSugar ns1:brandName "RxSugar" .
+
+ns1:HarmonyProteins ns1:brandName "Harmony Proteins" .
+
+ns1:CollegeInn ns1:brandName "College Inn" .
+
+ns1:FourSigmatic ns1:brandName "Four Sigmatic" .
+
+ns1:Wonder ns1:brandName "Wonder" .
+
+ns1:WoodbridgebyRobertMondavi ns1:brandName "Woodbridge by Robert Mondavi" .
+
+ns1:MilkyWay ns1:brandName "Milky Way" .
+
+ns1:ZakDesigns ns1:brandName "Zak Designs" .
+
+ns1:PopCorners ns1:brandName "PopCorners" .
+
+ns1:HawaiianPunch ns1:brandName "Hawaiian Punch" .
+
+ns1:Petit ns1:brandName "Petit" .
+
+ns1:ThaiKitchen ns1:brandName "Thai Kitchen" .
+
+ns1:MilwaukeesBest ns1:brandName "Milwaukee's Best" .
+
+ns1:AndyCapps ns1:brandName "Andy Capp's" .
+
+ns1:Fritos ns1:brandName "Fritos" .
+
+ns1:BarS ns1:brandName "Bar-S" .
+
+ns1:Bartenura ns1:brandName "Bartenura" .
+
+ns1:Haigs ns1:brandName "Haig's" .
+
+ns1:LOUISJADOT ns1:brandName "LOUIS JADOT" .
+
+ns1:ChuckWagon ns1:brandName "Chuck Wagon" .
+
+ns1:LesserEvil ns1:brandName "LesserEvil" .
+
+ns1:DoubleDMeatCompany ns1:brandName "Double D Meat Company" .
+
+ns1:JollyRancher ns1:brandName "Jolly Rancher" .
+
+ns1:CoolWhip ns1:brandName "Cool Whip" .
+
+ns1:BFree ns1:brandName "BFree" .
+
+ns1:SimpleMills ns1:brandName "Simple Mills" .
+
+ns1:EarthMama ns1:brandName "Earth Mama" .
+
+ns1:ClearAmerican ns1:brandName "Clear American" .
+
+ns1:Kikkoman ns1:brandName "Kikkoman" .
+
+ns1:BetterBodyFoods ns1:brandName "BetterBody Foods" .
+
+ns1:Ronzoni ns1:brandName "Ronzoni" .
+
+ns1:PepperidgeFarm ns1:brandName "Pepperidge Farm" .
+
+ns1:TastyBite ns1:brandName "Tasty Bite" .
+
+ns1:CapnCrunch ns1:brandName "Cap n Crunch" .
+
+ns1:HiChew ns1:brandName "Hi-Chew" .
+
+ns1:CoronaLight ns1:brandName "Corona Light" .
+
+ns1:ROLDGOLD ns1:brandName "ROLD GOLD" .
+
+ns1:Conestoga ns1:brandName "Conestoga" .
+
+ns1:RSEPBCRUNCHBARS ns1:brandName "RSEPB CRUNCH BARS" .
+
+ns1:Dutchmark ns1:brandName "Dutchmark" .
+
+ns1:Muellers ns1:brandName "Mueller's" .
+
+ns1:GoodEarth ns1:brandName "Good Earth" .
+
+ns1:ParmCrisps ns1:brandName "ParmCrisps" .
+
+ns1:CloverdaleFoods ns1:brandName "Cloverdale Foods" .
+
+ns1:LandOFrost ns1:brandName "Land O'Frost" .
+
+ns1:Tetley ns1:brandName "Tetley" .
+
+ns1:MonkFruit ns1:brandName "Monk Fruit" .
+
+ns1:BOGLE ns1:brandName "BOGLE" .
+
+ns1:MrsFearnows ns1:brandName "Mrs Fearnows" .
+
+ns1:HighNoon ns1:brandName "High Noon" .
+
+ns1:Daniele ns1:brandName "Daniele" .
+
+ns1:KAME ns1:brandName "KA-ME" .
+
+ns1:PerfectPOD ns1:brandName "Perfect POD" .
+
+ns1:SwedishFish ns1:brandName "Swedish Fish" .
+
+ns1:SweeTarts ns1:brandName "SweeTarts" .
+
+ns1:CandyPop ns1:brandName "Candy Pop" .
+
+ns1:Snapple ns1:brandName "Snapple" .
+
+ns1:Gehls ns1:brandName "Gehl's" .
+
+ns1:CrystalFarms ns1:brandName "Crystal Farms" .
+
+ns1:BobEvans ns1:brandName "Bob Evans" .
+
+ns1:LaMorenita ns1:brandName "La Morenita" .
+
+ns1:Seagrams ns1:brandName "Seagram's" .
+
+ns1:LionneRoyale ns1:brandName "Lionne Royale" .
+
+ns1:TheNoMeatCo ns1:brandName "The No Meat Co." .
+
+ns1:GoldPeak ns1:brandName "Gold Peak" .
+
+ns1:TERRA ns1:brandName "TERRA" .
+
+ns1:LaPreferida ns1:brandName "La Preferida" .
+
+ns1:Ditaliano ns1:brandName "D'italiano" .
+
+ns1:NaturesPremium ns1:brandName "Nature's Premium" .
+
+ns1:GiovanniRana ns1:brandName "Giovanni Rana" .
+
+ns1:ParadiseGold ns1:brandName "Paradise Gold" .
+
+ns1:Marzetti ns1:brandName "Marzetti" .
+
+ns1:Modelo ns1:brandName "Modelo" .
+
+ns1:Angies ns1:brandName "Angie's" .
+
+ns1:Armour ns1:brandName "Armour" .
+
+ns1:SNAXSationalBrands ns1:brandName "SNAX-Sational Brands" .
+
+ns1:CabotCreamery ns1:brandName "Cabot Creamery" .
+
+ns1:Zatarains ns1:brandName "Zatarain's" .
+
+ns1:PopWeaver ns1:brandName "Pop Weaver" .
+
+ns1:Babybel ns1:brandName "Babybel" .
+
+ns1:IZZE ns1:brandName "IZZE" .
+
+ns1:Josh ns1:brandName "Josh" .
+
+ns1:Coffeemate ns1:brandName "Coffeemate" .
+
+ns1:nutpods ns1:brandName "nutpods" .
+
+ns1:JUNKLESS ns1:brandName "JUNKLESS" .
+
+ns1:OrganicValley ns1:brandName "Organic Valley" .
+
+ns1:CaymusVineyards ns1:brandName "Caymus Vineyards" .
+
+ns1:Romeros ns1:brandName "Romero's" .
+
+ns1:Pringles ns1:brandName "Pringles" .
+
+ns1:SwissMiss ns1:brandName "Swiss Miss" .
+
+ns1:SlimFast ns1:brandName "SlimFast" .
+
+ns1:NoYolks ns1:brandName "No Yolks" .
+
+ns1:ButterKrust ns1:brandName "Butter Krust" .
+
+ns1:McCormick ns1:brandName "McCormick" .
+
+ns1:BartlesJaymes ns1:brandName "Bartles & Jaymes" .
+
+ns1:Herdez ns1:brandName "Herdez" .
+
+ns1:Astoria ns1:brandName "Astoria" .
+
+ns1:PowerfulFoods ns1:brandName "Powerful Foods" .
+
+ns1:QuinnSnacks ns1:brandName "Quinn Snacks" .
+
+ns1:DecoyWineSeltzer ns1:brandName "Decoy Wine Seltzer" .
+
+ns1:RedDiamond ns1:brandName "Red Diamond" .
+
+ns1:ITOEN ns1:brandName "ITO EN" .
+
+ns1:HuKitchen ns1:brandName "Hu Kitchen" .
+
+ns1:RXBAR ns1:brandName "RXBAR" .
+
+ns1:Franzia ns1:brandName "Franzia" .
+
+ns1:Raisinets ns1:brandName "Raisinets" .
+
+ns1:DuckhornVineyards ns1:brandName "Duckhorn Vineyards" .
+
+ns1:JonesDairyFarm ns1:brandName "Jones Dairy Farm" .
+
+ns1:428897 ns1:brandName "428897" .
+
+ns1:METRx ns1:brandName "MET-Rx" .
+
+ns1:CaliflourFoods ns1:brandName "Califlour Foods" .
+
+ns1:Bryan ns1:brandName "Bryan" .
+
+ns1:MMS ns1:brandName "M&M'S" .
+
+ns1:Gardettos ns1:brandName "Gardetto's" .
+
+ns1:ElMexicano ns1:brandName "El Mexicano" .
+
+ns1:Ovaltine ns1:brandName "Ovaltine" .
+
+ns1:KINDER ns1:brandName "KINDER" .
+
+ns1:Colcafe ns1:brandName "Colcafe" .
+
+ns1:Bays ns1:brandName "Bays" .
+
+ns1:Eckrich ns1:brandName "Eckrich" .
+
+ns1:Manda ns1:brandName "Manda" .
+
+ns1:good2grow ns1:brandName "good2grow" .
+
+ns1:BuschLight ns1:brandName "Busch Light" .
+
+ns1:Quaker ns1:brandName "Quaker" .
+
+ns1:KLVNCoffee ns1:brandName "KLVN Coffee" .
+
+ns1:Barefoot ns1:brandName "Barefoot" .
+
+ns1:CafeBustelo ns1:brandName "Cafe Bustelo" .
+
+ns1:BlueDragon ns1:brandName "Blue Dragon" .
+
+ns1:OrvilleRedenbachers ns1:brandName "Orville Redenbacher's" .
+
+ns1:RITAS ns1:brandName "RITAS" .
+
+ns1:JimmyDean ns1:brandName "Jimmy Dean" .
+
+ns1:DvashOrganics ns1:brandName "D'vash Organics" .
+
+ns1:Pyure ns1:brandName "Pyure" .
+
+ns1:AnthemSports ns1:brandName "Anthem Sports" .
+
+ns1:UncleCharleys ns1:brandName "Uncle Charley's" .
+
+ns1:GTSLivingFoods ns1:brandName "GT'S Living Foods" .
+
+ns1:Oikos ns1:brandName "Oikos" .
+
+ns1:FieldRoast ns1:brandName "Field Roast" .
+
+ns1:RWKnudsenFamily ns1:brandName "R.W. Knudsen Family" .
+
+ns1:Ezekiel49 ns1:brandName "Ezekiel 4:9" .
+
+ns1:BetterMadeSpecial ns1:brandName "Better Made Special" .
+
+ns1:VIP ns1:brandName "V.I.P." .
+
+ns1:RedHots ns1:brandName "Red Hots" .
+
+ns1:GoldenFlake ns1:brandName "Golden Flake" .
+
+ns1:Velda ns1:brandName "Velda" .
+
+ns1:RMPalmer ns1:brandName "R.M. Palmer" .
+
+ns1:Hormel ns1:brandName "Hormel" .
+
+ns1:LaChona ns1:brandName "La Chona" .
+
+ns1:MamaLupes ns1:brandName "Mama Lupe's" .
+
+ns1:Margherita ns1:brandName "Margherita" .
+
+ns1:Nerds ns1:brandName "Nerds" .
+
+ns1:ImagineFoods ns1:brandName "Imagine Foods" .
+
+ns1:BlueprintCoffee ns1:brandName "Blueprint Coffee" .
+
+ns1:DEVOUR ns1:brandName "DEVOUR" .
+
+ns1:SUNNYD ns1:brandName "SUNNYD" .
+
+ns1:LandmarkCoffee ns1:brandName "Landmark Coffee" .
+
+ns1:PlumOrganics ns1:brandName "Plum Organics" .
+
+ns1:Farmland ns1:brandName "Farmland" .
+
+ns1:Beefsteak ns1:brandName "Beefsteak" .
+
+ns1:Lucas ns1:brandName "Lucas" .
+
+ns1:TicTac ns1:brandName "Tic Tac" .
+
+ns1:EarthboundFarm ns1:brandName "Earthbound Farm" .
+
+ns1:Galerie ns1:brandName "Galerie" .
+
+ns1:KitchenBasics ns1:brandName "Kitchen Basics" .
+
+ns1:GODIVA ns1:brandName "GODIVA" .
+
+ns1:Pretzilla ns1:brandName "Pretzilla" .
+
+ns1:BeanBox ns1:brandName "Bean Box" .
+
+ns1:MapleLeafCoffeeRoasters ns1:brandName "Maple Leaf Coffee Roasters" .
+
+ns1:Stonefire ns1:brandName "Stonefire" .
+
+ns1:ProphecyWines ns1:brandName "Prophecy Wines" .
+
+ns1:KORBEL ns1:brandName "KORBEL" .
+
+ns1:Naked ns1:brandName "Naked" .
+
+ns1:CoronaPremier ns1:brandName "Corona Premier" .
+
+ns1:RedAppleCheese ns1:brandName "Red Apple Cheese" .
+
+ns1:Farberware ns1:brandName "Farberware" .
+
+ns1:RoyalKona ns1:brandName "Royal Kona" .
+
+ns1:Snapdragon ns1:brandName "Snapdragon" .
+
+ns1:ToxicWaste ns1:brandName "Toxic Waste" .
+
+ns1:CafeLegal ns1:brandName "Cafe Legal" .
+
+ns1:TreeHive ns1:brandName "Tree Hive?" .
+
+ns1:SonomaCutrer ns1:brandName "Sonoma-Cutrer" .
+
+ns1:HakutsuruSake ns1:brandName "Hakutsuru Sake" .
+
+ns1:Franciscan ns1:brandName "Franciscan" .
+
+ns1:Atkins ns1:brandName "Atkins" .
+
+ns1:Reese ns1:brandName "Reese" .
+
+ns1:MAMMACHIA ns1:brandName "MAMMA CHIAВ®" .
+
+ns1:Toblerone ns1:brandName "Toblerone" .
+
+ns1:CommunityCoffee ns1:brandName "Community Coffee" .
+
+ns1:Nostalgia ns1:brandName "Nostalgia" .
+
+ns1:Arnold ns1:brandName "Arnold" .
+
+ns1:KodiakCakes ns1:brandName "Kodiak Cakes" .
+
+ns1:Assorted ns1:brandName "Assorted" .
+
+ns1:Imagine ns1:brandName "Imagine" .
+
+ns1:Alo ns1:brandName "Alo" .
+
+ns1:SaraLee ns1:brandName "Sara Lee" .
+
+ns1:Remedy ns1:brandName "Remedy" .
+
+ns1:KituSuperCoffee ns1:brandName "Kitu Super Coffee" .
+
+ns1:BudLightLime ns1:brandName "Bud Light Lime" .
+
+ns1:Whatchamacallit ns1:brandName "Whatchamacallit" .
+
+ns1:JVineyardsWinery ns1:brandName "J Vineyards & Winery" .
+
+ns1:Krusteaz ns1:brandName "Krusteaz" .
+
+ns1:Campbells ns1:brandName "Campbell's" .
+
+ns1:Oroweat ns1:brandName "Oroweat" .
+
+ns1:RusticCrust ns1:brandName "Rustic Crust" .
+
+ns1:Brachs ns1:brandName "Brach's" .
+
+ns1:Keystone ns1:brandName "Keystone" .
+
+ns1:Smirnoff ns1:brandName "Smirnoff" .
+
+ns1:SpiceWorld ns1:brandName "Spice World" .
+
+ns1:SourPatchKids ns1:brandName "Sour Patch Kids" .
+
+ns1:LaffyTaffy ns1:brandName "Laffy Taffy" .
+
+ns1:Earthquake ns1:brandName "Earthquake" .
+
+ns1:BBCharcoal ns1:brandName "B&B Charcoal" .
+
+ns1:RutaMaya ns1:brandName "Ruta Maya" .
+
+ns1:BUNN ns1:brandName "BUNN" .
+
+ns1:PabstBlueRibbon ns1:brandName "Pabst Blue Ribbon" .
+
+ns1:Jays ns1:brandName "Jays" .
+
+ns1:DuncanHines ns1:brandName "Duncan Hines" .
+
+ns1:Litehouse ns1:brandName "Litehouse" .
+
+ns1:LifeSavers ns1:brandName "Life Savers" .
+
+ns1:SweetNLow ns1:brandName "Sweet'N Low" .
+
+ns1:Zeppys ns1:brandName "Zeppy's" .
+
+ns1:TAZO ns1:brandName "TAZO" .
+
+ns1:Reeses ns1:brandName "Reese's" .
+
+ns1:RiceSelect ns1:brandName "RiceSelect" .
+
+ns1:Stok ns1:brandName "Stok" .
+
+ns1:TraditionalMedicinals ns1:brandName "Traditional Medicinals" .
+
+ns1:CarringtonFarms ns1:brandName "Carrington Farms" .
+
+ns1:Locatelli ns1:brandName "Locatelli" .
+
+ns1:Langers ns1:brandName "Langers" .
+
+ns1:TropicalFoods ns1:brandName "Tropical Foods" .
+
+ns1:Camaonazo ns1:brandName "Camaonazo" .
+
+ns1:VeggiecraftFarms ns1:brandName "Veggiecraft Farms" .
+
+ns1:BagelBites ns1:brandName "Bagel Bites" .
+
+ns1:LakewoodOrganic ns1:brandName "Lakewood Organic" .
+
+ns1:SapporoIchiban ns1:brandName "Sapporo Ichiban" .
+
+ns1:CommonplaceCoffee ns1:brandName "Commonplace Coffee" .
+
+ns1:EightOClock ns1:brandName "Eight O'Clock" .
+
+ns1:Cricut ns1:brandName "Cricut" .
+
+ns1:DrinkPlay ns1:brandName "Drink&Play" .
+
+ns1:RitterSport ns1:brandName "Ritter Sport" .
+
+ns1:CoorsLight ns1:brandName "Coors Light" .
+
+ns1:Festive ns1:brandName "Festive" .
+
+ns1:ASSORTMENT ns1:brandName "ASSORTMENT" .
+
+ns1:Schar ns1:brandName "Schar" .
+
+ns1:Frankford ns1:brandName "Frankford" .
+
+ns1:Tabatchnick ns1:brandName "Tabatchnick" .
+
+ns1:FloridasNatural ns1:brandName "Florida's Natural" .
+
+ns1:Victoria ns1:brandName "Victoria" .
+
+ns1:TopRamen ns1:brandName "Top Ramen" .
+
+ns1:BOSTONBAKEDBEANS ns1:brandName "BOSTON BAKED BEANS" .
+
+ns1:HerbOx ns1:brandName "Herb-Ox" .
+
+ns1:DumDums ns1:brandName "Dum Dums" .
+
+ns1:MadeGood ns1:brandName "MadeGood" .
+
+ns1:AmericanFarmhouse ns1:brandName "American Farmhouse" .
+
+ns1:StonyfieldFarm ns1:brandName "Stonyfield Farm" .
+
+ns1:NighthawkBlack ns1:brandName "Nighthawk Black" .
+
+ns1:CaliforniaOliveRanch ns1:brandName "California Olive Ranch" .
+
+ns1:Tessemaes ns1:brandName "Tessemae's" .
+
+ns1:KinderJoy ns1:brandName "Kinder Joy" .
+
+ns1:Skyline ns1:brandName "Skyline" .
+
+ns1:CapeCod ns1:brandName "Cape Cod" .
+
+ns1:McCaf ns1:brandName "McCafГ©" .
+
+ns1:DietzWatson ns1:brandName "Dietz & Watson" .
+
+ns1:NaturesBountyKids ns1:brandName "Nature's Bounty Kids" .
+
+ns1:Split ns1:brandName "Split" .
+
+ns1:WykeFarms ns1:brandName "Wyke Farms" .
+
+ns1:JustPoppin ns1:brandName "Just Poppin" .
+
+ns1:Bugles ns1:brandName "Bugles" .
+
+ns1:FreshnessGuarnteed ns1:brandName "Freshness Guarnteed" .
+
+ns1:Whisps ns1:brandName "Whisps" .
+
+ns1:OZERYBAKERY ns1:brandName "OZERY BAKERY" .
+
+ns1:BettyCrocker ns1:brandName "Betty Crocker" .
+
+ns1:BOTABOX ns1:brandName "BOTA BOX" .
+
+ns1:GummiPopSurprise ns1:brandName "Gummi Pop Surprise" .
+
+ns1:IndianRiverSelect ns1:brandName "Indian River Select" .
+
+ns1:KindBar ns1:brandName "Kind Bar" .
+
+ns1:Santitas ns1:brandName "Santitas" .
+
+ns1:Guinness ns1:brandName "Guinness" .
+
+ns1:TAITTINGER ns1:brandName "TAITTINGER" .
+
+ns1:JosephFarms ns1:brandName "Joseph Farms" .
+
+ns1:Beverly ns1:brandName "Beverly" .
+
+ns1:TheCoffeeBeanTeaLeaf ns1:brandName "The Coffee Bean & Tea Leaf" .
+
+ns1:ChloeWineCollection ns1:brandName "Chloe Wine Collection" .
+
+ns1:Sistema ns1:brandName "Sistema" .
+
+ns1:ArborMist ns1:brandName "Arbor Mist" .
+
+ns1:PastaLensi ns1:brandName "Pasta Lensi" .
+
+ns1:HamiltonBeach ns1:brandName "Hamilton Beach" .
+
+ns1:GiaRussa ns1:brandName "Gia Russa" .
+
+ns1:Castleberrys ns1:brandName "Castleberry's" .
+
+ns1:ImpossibleFoods ns1:brandName "Impossible Foods" .
+
+ns1:Viamora ns1:brandName "Viamora" .
+
+ns1:DulcesVero ns1:brandName "Dulces Vero" .
+
+ns1:Celebrations ns1:brandName "Celebrations" .
+
+ns1:JOJOsChocolate ns1:brandName "JOJO's Chocolate" .
+
+ns1:MaryBs ns1:brandName "Mary B's" .
+
+ns1:MrsWeiss ns1:brandName "Mrs. Weiss'" .
+
+ns1:Swerve ns1:brandName "Swerve" .
+
+ns1:FlixCandy ns1:brandName "Flix Candy" .
+
+ns1:OKeDoke ns1:brandName "O-Ke-Doke" .
+
+ns1:PureLeaf ns1:brandName "Pure Leaf" .
+
+ns1:YesWayRos ns1:brandName "Yes Way RosГ©" .
+
+ns1:CrackerBarrel ns1:brandName "Cracker Barrel" .
+
+ns1:Knorr ns1:brandName "Knorr" .
+
+ns1:SkinnyDipped ns1:brandName "Skinny Dipped" .
+
+ns1:LIFEWAY ns1:brandName "LIFEWAY" .
+
+ns1:WinemakersSelection ns1:brandName "Winemakers Selection" ;
+ns1:brandName "Winemakers Selectionв„ў" .
+
+ns1:FiberOne ns1:brandName "Fiber One" .
+
+ns1:Oliver ns1:brandName "Oliver" .
+
+ns1:Beanitos ns1:brandName "Beanitos" .
+
+ns1:InternationalDelight ns1:brandName "International Delight" .
+
+ns1:Calypso ns1:brandName "Calypso" .
+
+ns1:NoSugarCompany ns1:brandName "No Sugar Company" .
+
+ns1:BizzyCoffee ns1:brandName "Bizzy Coffee" .
+
+ns1:Sola ns1:brandName "Sola" .
+
+ns1:ARARECANDIESSEEDS ns1:brandName "ARARE,CANDIES,SEEDS" .
+
+ns1:Biscoff ns1:brandName "Biscoff" .
+
+ns1:Heineken ns1:brandName "Heineken" .
+
+ns1:MamaSitas ns1:brandName "Mama Sita's" .
+
+ns1:Colombina ns1:brandName "Colombina" .
+
+ns1:Maggi ns1:brandName "Maggi" .
+
+ns1:YumEarth ns1:brandName "Yum Earth" .
+
+ns1:NELLIEJOES ns1:brandName "NELLIE & JOEвЂ™S" .
+
+ns1:MilkDuds ns1:brandName "Milk Duds" .
+
+ns1:EJGalloWinery ns1:brandName "E. & J. Gallo Winery" .
+
+ns1:FreshnessGuaranteed ns1:brandName "Freshness Guaranteed" .
+
+ns1:KINDBars ns1:brandName "KIND Bars" ;
+ns1:brandName "KINDВ Bars" .
+
+ns1:NongShim ns1:brandName "Nong Shim" .
+
+ns1:MichelobUltra ns1:brandName "Michelob Ultra" .
+
+ns1:Yuengling ns1:brandName "Yuengling" .
+
+ns1:TheBakery ns1:brandName "The Bakery" .
+
+ns1:Zulka ns1:brandName "Zulka" .
+
+ns1:SLOVACEKS ns1:brandName "SLOVACEK'S" .
+
+ns1:DasDutchmanEssenhaus ns1:brandName "Das Dutchman Essenhaus" .
+
+ns1:Skylark ns1:brandName "Skylark" .
+
+ns1:flipz ns1:brandName "flipz" .
+
+ns1:Barbie ns1:brandName "Barbie" .
+
+ns1:CooperThiefCellarmasters ns1:brandName "Cooper & Thief Cellarmasters" .
+
+ns1:Milos ns1:brandName "Milo's" .
+
+ns1:FritoLay ns1:brandName "Frito-Lay" .
+
+ns1:NationalCup ns1:brandName "National Cup" .
+
+ns1:NoCoastCoffee ns1:brandName "No Coast Coffee" .
+
+ns1:CarnationBreakfastEssentials ns1:brandName "Carnation Breakfast Essentials" .
+
+ns1:FunDip ns1:brandName "Fun Dip" .
+
+ns1:Enlightened ns1:brandName "Enlightened" .
+
+ns1:RogerWood ns1:brandName "Roger Wood" .
+
+ns1:Ghirardelli ns1:brandName "Ghirardelli" .
+
+ns1:Supremo ns1:brandName "Supremo!" .
+
+ns1:RedStripe ns1:brandName "Red Stripe" .
+
+ns1:ClosDuBois ns1:brandName "Clos Du Bois" .
+
+ns1:SeattlesBestCoffee ns1:brandName "Seattle's Best Coffee" .
+
+ns1:Annies ns1:brandName "Annie's" .
+
+ns1:SaVia ns1:brandName "SaVia" .
+
+ns1:Rojos ns1:brandName "Rojo's" .
+
+ns1:JuicyDrop ns1:brandName "Juicy Drop" .
+
+ns1:Peroni ns1:brandName "Peroni" .
+
+ns1:TheGoodCrispCompany ns1:brandName "The Good Crisp Company" .
+
+ns1:FaceTwisters ns1:brandName "Face Twisters" .
+
+ns1:JLohrVineryWines ns1:brandName "J Lohr Vinery & Wines" .
+
+ns1:WrightBrand ns1:brandName "Wright Brand" .
+
+ns1:GHCretors ns1:brandName "G.H. Cretors" .
+
+ns1:DelMonte ns1:brandName "Del Monte" .
+
+ns1:HarvestSelect ns1:brandName "Harvest Select" .
+
+ns1:MAUNALOA ns1:brandName "MAUNA LOA" .
+
+ns1:LaBoulangre ns1:brandName "La BoulangГЁre" .
+
+ns1:Hilco ns1:brandName "Hilco" .
+
+ns1:Gatorade ns1:brandName "Gatorade" .
+
+ns1:FloridaCrystals ns1:brandName "Florida Crystals" .
+
+ns1:TablaFresca ns1:brandName "Tabla Fresca" .
+
+ns1:FerreroEggs ns1:brandName "Ferrero Eggs" .
+
+ns1:ZonePerfect ns1:brandName "ZonePerfect" .
+
+ns1:MIKEANDIKE ns1:brandName "MIKE AND IKEВ®" .
+
+ns1:SpringValley ns1:brandName "Spring Valley" .
+
+ns1:Honest ns1:brandName "Honest" .
+
+ns1:Barnana ns1:brandName "Barnana" .
+
+ns1:NicklesBakery ns1:brandName "Nickles Bakery" .
+
+ns1:SamsChoice ns1:brandName "Sam's Choice" .
+
+ns1:Knudsen ns1:brandName "Knudsen" .
+
+ns1:Tecate ns1:brandName "Tecate" .
+
+ns1:OldElPaso ns1:brandName "Old El Paso" .
+
+ns1:Riesen ns1:brandName "Riesen" .
+
+ns1:PurpleMoonCheese ns1:brandName "Purple Moon Cheese" .
+
+ns1:ESTANCIA ns1:brandName "ESTANCIA" .
+
+ns1:RELAX ns1:brandName "RELAX" .
+
+ns1:AmericanBeauty ns1:brandName "American Beauty" .
+
+ns1:Utz ns1:brandName "Utz" .
+
+ns1:RichardsCajunFoods ns1:brandName "Richard's Cajun Foods" .
+
+ns1:PacificFoods ns1:brandName "Pacific Foods" .
+
+ns1:SweetyIceCream ns1:brandName "Sweety Ice Cream" .
+
+ns1:Nesquik ns1:brandName "Nesquik" .
+
+ns1:TownleyGirl ns1:brandName "TownleyGirl" .
+
+ns1:MummNapa ns1:brandName "Mumm Napa" .
+
+ns1:HillsBrosCoffee ns1:brandName "Hills Bros. Coffee" .
+
+ns1:MamaMarys ns1:brandName "Mama Mary's" .
+
+ns1:noosa ns1:brandName "noosa" .
+
+ns1:BrewRite ns1:brandName "Brew Rite" .
+
+ns1:V8 ns1:brandName "V8" .
+
+ns1:PiperHeidsieck ns1:brandName "Piper-Heidsieck" .
+
+ns1:Core ns1:brandName "Core" .
+
+ns1:MorningStarFarms ns1:brandName "MorningStar Farms" .
+
+ns1:HouseWine ns1:brandName "House Wine" .
+
+ns1:Yoplait ns1:brandName "Yoplait" .
+
+ns1:MrsBairds ns1:brandName "Mrs Baird's" .
+
+ns1:RedRose ns1:brandName "Red Rose" .
+
+ns1:CharlestonChew ns1:brandName "Charleston Chew" .
+
+ns1:PRODUCEUNBRANDED ns1:brandName "PRODUCE UNBRANDED" .
+
+ns1:Sultan ns1:brandName "Sultan" .
+
+ns1:Meiomi ns1:brandName "Meiomi" .
+
+ns1:HungryMan ns1:brandName "Hungry-Man" .
+
+ns1:Udis ns1:brandName "Udi's" .
+
+ns1:CoronaExtra ns1:brandName "Corona Extra" .
+
+ns1:Press ns1:brandName "Press" .
+
+ns1:PerfectionSnacks ns1:brandName "Perfection Snacks" .
+
+ns1:Gerber ns1:brandName "Gerber" .
+
+ns1:Dole ns1:brandName "Dole" .
+
+ns1:SuperCoffee ns1:brandName "Super Coffee" .
+
+ns1:CampoViejo ns1:brandName "Campo Viejo" .
+
+ns1:GoGURT ns1:brandName "Go-GURT" .
+
+ns1:PremioFoods ns1:brandName "Premio Foods" .
+
+ns1:Mixed ns1:brandName "Mixed" .
+
+ns1:HawaiianIsles ns1:brandName "Hawaiian Isles" .
+
+ns1:Motts ns1:brandName "Mott's" .
+
+ns1:SouthernBreeze ns1:brandName "Southern Breeze" .
+
+ns1:Fiscalini ns1:brandName "Fiscalini" .
+
+ns1:CampbellsWellYesSoups ns1:brandName "CampbellвЂ™s Well Yes! Soups" .
+
+ns1:SenorRico ns1:brandName "Senor Rico" .
+
+ns1:Apothic ns1:brandName "Apothic" .
+
+ns1:Marketside ns1:brandName "Marketside" .
+
+ns1:ROLO ns1:brandName "ROLO" .
+
+ns1:BallardsFarm ns1:brandName "Ballard's Farm" .
+
+ns1:Brisk ns1:brandName "Brisk" .
+
+ns1:LeanCuisine ns1:brandName "Lean Cuisine" .
+
+ns1:ShullsburgCreamery ns1:brandName "Shullsburg Creamery" .
+
+ns1:VanLeeuwenIceCream ns1:brandName "Van Leeuwen Ice Cream" .
+
+ns1:FarmFreshWineCompany ns1:brandName "Farm Fresh Wine Company" .
+
+ns1:DintyMoore ns1:brandName "Dinty Moore" .
+
+ns1:JackDaniels ns1:brandName "Jack Daniel's" .
+
+ns1:TwoGood ns1:brandName "Two Good" .
+
+ns1:PaneraBread ns1:brandName "Panera Bread" .
+
+ns1:Progresso ns1:brandName "Progresso" .
+
+ns1:ONLINE ns1:brandName "ONLINE" .
+
+ns1:GreatValueCocomelon ns1:brandName "Great Value Cocomelon" .
+
+ns1:NaturalChoice ns1:brandName "Natural Choice" .
+
+ns1:HawaiianSun ns1:brandName "Hawaiian Sun" .
+
+ns1:StreetKitchen ns1:brandName "Street Kitchen" .
+
+ns1:Lenders ns1:brandName "Lender's" .
+
+ns1:Folgers ns1:brandName "Folgers" .
+
+ns1:SmartSweets ns1:brandName "SmartSweets" .
+
+ns1:SnackPack ns1:brandName "Snack Pack" .
+
+ns1:GoldenGrahams ns1:brandName "Golden Grahams" .
+
+ns1:NutHarvest ns1:brandName "Nut Harvest" .
+
+ns1:Sparkletini ns1:brandName "Sparkletini" .
+
+ns1:JellO ns1:brandName "Jell-O" .
+
+ns1:YoCrunch ns1:brandName "YoCrunch" .
+
+ns1:NaturesOwn ns1:brandName "Nature's Own" .
+
+ns1:LuciniItalia ns1:brandName "Lucini Italia" .
+
+ns1:VictorAllensCoffee ns1:brandName "Victor Allen's Coffee" .
+
+ns1:HillandaleFarms ns1:brandName "Hillandale Farms" .
+
+ns1:RUFFINO ns1:brandName "RUFFINO" .
+
+ns1:Smithfield ns1:brandName "Smithfield" .
+
+ns1:Suja ns1:brandName "Suja" .
+
+ns1:PrimaDella ns1:brandName "Prima Della" .
+
+ns1:WhitehavenWine ns1:brandName "Whitehaven Wine" .
+
+ns1:KimCrawford ns1:brandName "Kim Crawford" .
+
+ns1:WerthersOriginal ns1:brandName "Werther's Original" .
+
+ns1:BudweiserSelect ns1:brandName "Budweiser Select" .
+
+ns1:GoMacro ns1:brandName "GoMacro" .
+
+ns1:WymansofMaine ns1:brandName "Wyman's of Maine" .
+
+ns1:JackLinks ns1:brandName "Jack Link's" .
+
+ns1:Cocomels ns1:brandName "Cocomels" .
+
+ns1:ALAMOS ns1:brandName "ALAMOS" .
+
+ns1:NewmansOwnOrganics ns1:brandName "Newman's Own Organics" .
+
+ns1:DeLaRosa ns1:brandName "De La Rosa" .
+
+ns1:LomaLinda ns1:brandName "Loma Linda" .
+
+ns1:Revv ns1:brandName "Revv" .
+
+ns1:AriZona ns1:brandName "AriZona" .
+
+ns1:TheCheesecakeFactory ns1:brandName "The Cheesecake Factory" .
+
+ns1:SakeMoto ns1:brandName "SakeMoto" .
+
+ns1:YogiTea ns1:brandName "Yogi Tea" .
+
+ns1:NaturalLight ns1:brandName "Natural Light" .
+
+ns1:Doritos ns1:brandName "Doritos" .
+
+ns1:BobsBigBoy ns1:brandName "Bob's Big Boy" .
+
+ns1:Gushers ns1:brandName "Gushers" .
+
+ns1:PopcornIndiana ns1:brandName "Popcorn, Indiana" .
+
+ns1:LittleBellies ns1:brandName "Little Bellies" .
+
+ns1:Danonino ns1:brandName "Dan-o-nino" .
+
+ns1:JoshCellars ns1:brandName "Josh Cellars" .
+
+ns1:Albanese ns1:brandName "Albanese" .
+
+ns1:GarcaBaquero ns1:brandName "GarcГ­a Baquero" .
+
+ns1:HeluvaGood ns1:brandName "Heluva Good!" .
+
+ns1:Mounds ns1:brandName "Mounds" .
+
+ns1:CarolinaPride ns1:brandName "Carolina Pride" .
+
+ns1:BudLightPlatinum ns1:brandName "Bud Light Platinum" .
+
+ns1:Rag ns1:brandName "RagГє" ;
+ns1:brandName "RagГѓВѓГ‚Вє" .
+
+ns1:Cirkul ns1:brandName "Cirkul" .
+
+ns1:Haribo ns1:brandName "Haribo" .
+
+ns1:NewEnglandCoffee ns1:brandName "New England Coffee" .
+
+ns1:OldCroc ns1:brandName "Old Croc" .
+
+ns1:Dunkin ns1:brandName "Dunkin'" .
+
+ns1:BearCreek ns1:brandName "Bear Creek" .
+
+ns1:JohnMorrell ns1:brandName "John Morrell" .
+
+ns1:Vendange ns1:brandName "Vendange" .
+
+ns1:Nestle ns1:brandName "Nestle" .
+
+ns1:Klements ns1:brandName "Klement's" .
+
+ns1:Madhava ns1:brandName "Madhava" .
+
+ns1:TheDreamingTree ns1:brandName "The Dreaming Tree" .
+
+ns1:Busch ns1:brandName "Busch" .
+
+ns1:GoodPlenty ns1:brandName "Good & Plenty" .
+
+ns1:BolthouseFarms ns1:brandName "Bolthouse Farms" .
+
+ns1:HighBrew ns1:brandName "High Brew" .
+
+ns1:ATOMICFIREBALL ns1:brandName "ATOMIC FIREBALL" .
+
+ns1:Brookside ns1:brandName "Brookside" .
+
+ns1:RISATA ns1:brandName "RISATA" .
+
+ns1:Anthonys ns1:brandName "Anthony's" .
+
+ns1:HawaiiCoffeeRoasters ns1:brandName "Hawaii Coffee Roasters" .
+
+ns1:MooOink ns1:brandName "Moo & Oink" .
+
+ns1:Beringer ns1:brandName "Beringer" .
+
+ns1:PAWPatrol ns1:brandName "PAW Patrol" .
+
+ns1:Maruchan ns1:brandName "Maruchan" .
+
+ns1:CAULIPOWER ns1:brandName "CAULIPOWER" .
+
+ns1:LivingstonCellars ns1:brandName "Livingston Cellars" .
+
+ns1:OuterAisle ns1:brandName "Outer Aisle" .
+
+ns1:DavesKillerBread ns1:brandName "Dave's Killer Bread" .
+
+ns1:TwinstarBakery ns1:brandName "Twinstar Bakery" .
+
+ns1:DonMiguelGascon ns1:brandName "Don Miguel Gascon" .
+
+ns1:TonyChacheres ns1:brandName "Tony Chachere's" .
+
+ns1:OnTheBorder ns1:brandName "On The Border" .
+
+ns1:LucBelaire ns1:brandName "Luc Belaire" .
+
+ns1:RumbaMeats ns1:brandName "Rumba Meats" .
+
+ns1:ONEBrands ns1:brandName "ONE Brands" .
+
+ns1:PresidentCheese ns1:brandName "President Cheese" .
+
+ns1:CarrValleyCheese ns1:brandName "Carr Valley Cheese" .
+
+ns1:DeathWishCoffee ns1:brandName "Death Wish Coffee" .
+
+ns1:STEVIAINTHERAW ns1:brandName "STEVIA IN THE RAW" .
+
+ns1:NearEast ns1:brandName "Near East" .
+
+ns1:BODUM ns1:brandName "BODUM" .
+
+ns1:BrewDrKombucha ns1:brandName "Brew Dr. Kombucha" .
+
+ns1:Smuckers ns1:brandName "Smucker's" .
+
+ns1:GalloFamilyVineyards ns1:brandName "Gallo Family Vineyards" .
+
+ns1:NewYorkStyle ns1:brandName "New York Style" .
+
+ns1:PurnellsOldFolks ns1:brandName "Purnell's Old Folks" .
+
+ns1:McManisFamilyVineyards ns1:brandName "McManis Family Vineyards" .
+
+ns1:Capriccio ns1:brandName "Capriccio" .
+
+ns1:KoolAid ns1:brandName "Kool-Aid" .
+
+ns1:KingTop ns1:brandName "KingTop" .
+
+ns1:FannieMay ns1:brandName "Fannie May" .
+
+ns1:Lotte ns1:brandName "Lotte" .
+
+ns1:Ello ns1:brandName "Ello" .
+
+ns1:Northland ns1:brandName "Northland" .
+
+ns1:Breakstones ns1:brandName "Breakstone's" .
+
+ns1:FosterFarms ns1:brandName "Foster Farms" .
+
+ns1:Columbus ns1:brandName "Columbus" .
+
+ns1:StartRight ns1:brandName "Start Right" .
+
+ns1:BudLight ns1:brandName "Bud Light" .
+
+ns1:Hersheys ns1:brandName "Hershey's" ;
+ns1:brandName "Hershey''s" .
+
+ns1:HolmesSmokehouse ns1:brandName "Holmes Smokehouse" .
+
+ns1:naturalbliss ns1:brandName "natural bliss" .
+
+ns1:DeMets ns1:brandName "DeMet's" .
+
+ns1:Deans ns1:brandName "Dean's" .
+
+ns1:ElViajero ns1:brandName "El Viajero" .
+
+ns1:Hostess ns1:brandName "Hostess" .
+
+ns1:Jumex ns1:brandName "Jumex" .
+
+ns1:LAMARCA ns1:brandName "LA MARCA" .
+
+ns1:Taylor ns1:brandName "Taylor" .
+
+ns1:CoronaFamiliar ns1:brandName "Corona Familiar" .
+
+ns1:CooksCaliforniaChampagne ns1:brandName "Cook's California Champagne" .
+
+ns1:RingPop ns1:brandName "Ring Pop" .
+
+ns1:Barcel ns1:brandName "Barcel" .
+
+ns1:FreshExpress ns1:brandName "Fresh Express" .
+
+ns1:SmokyPark ns1:brandName "Smoky Park" .
+
+ns1:Nutella ns1:brandName "Nutella" .
+
+ns1:Edwards ns1:brandName "Edwards" .
+
+ns1:Coors ns1:brandName "Coors" .
+
+ns1:Beny ns1:brandName "Beny" .
+
+ns1:SUPERPRETZEL ns1:brandName "SUPERPRETZEL" .
+
+ns1:Zumbaleta ns1:brandName "Zumbaleta" .
+
+ns1:NaturesHarvest ns1:brandName "Nature's Harvest" .
+
+ns1:FruitbytheFoot ns1:brandName "Fruit by the Foot" .
+
+ns1:AppleEve ns1:brandName "Apple & Eve" .
+
+ns1:DAOU ns1:brandName "DAOU" .
+
+ns1:MunkPack ns1:brandName "Munk Pack" .
+
+ns1:NestlTollHouse ns1:brandName "NestlГ© Toll House" .
+
+ns1:Schmidt ns1:brandName "Schmidt" .
+
+ns1:SugarInTheRaw ns1:brandName "Sugar In The Raw" .
+
+ns1:BabyRuth ns1:brandName "Baby Ruth" .
+
+ns1:OldOrchard ns1:brandName "Old Orchard" .
+
+ns1:SRosens ns1:brandName "S. Rosen's" .
+
+ns1:Bimbo ns1:brandName "Bimbo" .
+
+ns1:HotTamales ns1:brandName "Hot Tamales" .
+
+ns1:HiC ns1:brandName "Hi-C" .
+
+ns1:Steeped ns1:brandName "Steeped" .
+
+ns1:KrispyKreme ns1:brandName "Krispy Kreme" .
+
+ns1:CLIFKidZbar ns1:brandName "CLIF Kid Zbar" .
+
+ns1:FrancescoRinaldi ns1:brandName "Francesco Rinaldi" .
+
+ns1:MeadowGold ns1:brandName "Meadow Gold" .
+
+ns1:OrringtonFarms ns1:brandName "Orrington Farms" .
+
+ns1:Ricolino ns1:brandName "Ricolino" .
+
+ns1:Milkita ns1:brandName "Milkita" .
+
+ns1:NESCAF ns1:brandName "NESCAFГ‰" .
+
+ns1:MottsMighty ns1:brandName "Mott's Mighty" .
+
+ns1:Mikes ns1:brandName "MikeвЂ™s" .
+
+ns1:BelGioioso ns1:brandName "BelGioioso" .
+
+ns1:Twistd ns1:brandName "Twistd" .
+
+ns1:JuanitasFoods ns1:brandName "Juanita's Foods" .
+
+ns1:KeVita ns1:brandName "KeVita" .
+
+ns1:Whoppers ns1:brandName "Whoppers" .
+
+ns1:PrimitiveFoods ns1:brandName "Primitive Foods" .
+
+ns1:GTs ns1:brandName "GT's" .
+
+ns1:InnMaid ns1:brandName "Inn Maid" .
+
+ns1:KetoCulture ns1:brandName "Keto Culture" .
+
+ns1:HawaiianHurricaneCompany ns1:brandName "Hawaiian Hurricane Company" .
+
+ns1:Flatout ns1:brandName "Flatout" .
+
+ns1:PawleysIsland ns1:brandName "Pawleys Island" .
+
+ns1:ConecuhSausage ns1:brandName "Conecuh Sausage" .
+
+ns1:CountryKitchen ns1:brandName "Country Kitchen" .
+
+ns1:AlmondJoy ns1:brandName "Almond Joy" .
+
+ns1:ReaLemon ns1:brandName "ReaLemon" .
+
+ns1:SweetSue ns1:brandName "Sweet Sue" .
+
+ns1:Ritz ns1:brandName "Ritz" .
+
+ns1:NaturesBakery ns1:brandName "Nature's Bakery" .
+
+ns1:Carvel ns1:brandName "Carvel" .
+
+ns1:NaturesBounty ns1:brandName "Nature's Bounty" .
+
+ns1:PiratesBooty ns1:brandName "Pirate's Booty" .
+
+ns1:TheRustikOven ns1:brandName "The Rustik Oven" .
+
+ns1:Sargento ns1:brandName "Sargento" .
+
+ns1:Lays ns1:brandName "Lay's" .
+
+ns1:LightFit ns1:brandName "Light & Fit" .
+
+ns1:LlanoEstacado ns1:brandName "Llano Estacado" .
+
+ns1:PopSecret ns1:brandName "Pop Secret" .
+
+ns1:CharmsCandyCarnival ns1:brandName "Charms Candy Carnival" .
+
+ns1:Welchs ns1:brandName "Welch's" .
+
+ns1:Musselmans ns1:brandName "Musselman's" .
+
+ns1:KauaiCoffee ns1:brandName "Kauai Coffee" .
+
+ns1:OlMexicanFoods ns1:brandName "OlГ© Mexican Foods" .
+
+ns1:Bragg ns1:brandName "Bragg" .
+
+ns1:ThomasFriends ns1:brandName "Thomas & Friends" .
+
+ns1:TaylorFarms ns1:brandName "Taylor Farms" .
+
+ns1:BudIce ns1:brandName "Bud Ice" .
+
+ns1:Hersheyland ns1:brandName "Hersheyland" .
+
+ns1:Kinderlyte ns1:brandName "Kinderlyte" .
+
+ns1:DosEquis ns1:brandName "Dos Equis" .
+
+ns1:YAKULT ns1:brandName "YAKULT" .
+
+ns1:PETERVELLA ns1:brandName "PETER VELLA" .
+
+ns1:LUNA ns1:brandName "LUNA" .
+
+ns1:Tootsie ns1:brandName "Tootsie" .
+
+ns1:OfficeThe ns1:brandName "Office, The" .
+
+ns1:ChildsPlay ns1:brandName "Child's Play" .
+
+ns1:KIND ns1:brandName "KIND" .
+
+ns1:Tostitos ns1:brandName "Tostitos" .
+
+ns1:HamBeens ns1:brandName "HamBeens" .
+
+ns1:Pocky ns1:brandName "Pocky" .
+
+ns1:MichelobUltraPureGold ns1:brandName "Michelob Ultra Pure Gold" .
+
+ns1:Umaibo ns1:brandName "Umaibo" .
+
+ns1:PalmerCandy ns1:brandName "Palmer Candy" .
+
+ns1:Daisy ns1:brandName "Daisy" .
+
+ns1:SKINTE ns1:brandName "SKINTE" .
+
+ns1:Starburst ns1:brandName "Starburst" .
+
+ns1:ZeroSkateboards ns1:brandName "Zero Skateboards" .
+
+ns1:Colt45 ns1:brandName "Colt 45" .
+
+ns1:EccoDomani ns1:brandName "Ecco Domani" .
+
+ns1:KetoKrisp ns1:brandName "Keto Krisp" .
+
+ns1:BoyersCoffee ns1:brandName "Boyer's Coffee" .
+
+ns1:DietSnapple ns1:brandName "Diet Snapple" .
+
+ns1:Butterfinger ns1:brandName "Butterfinger" .
+
+ns1:StoveTop ns1:brandName "Stove Top" .
+
+ns1:Slammers ns1:brandName "Slammers" .
+
+ns1:Yucatan ns1:brandName "Yucatan" .
+
+ns1:HawaiiStar ns1:brandName "Hawaii Star" .
+
+ns1:ThymeTable ns1:brandName "Thyme & Table" .
+
+ns1:BlackBox ns1:brandName "Black Box" .
+
+ns1:CORNKING ns1:brandName "CORN KING" .
+
+ns1:Macs ns1:brandName "Mac's" .
+
+ns1:AnnieChuns ns1:brandName "Annie Chun's" .
+
+ns1:Keurig ns1:brandName "Keurig" .
+
+ns1:14Hands ns1:brandName "14 Hands" .
+
+ns1:SteelReserve ns1:brandName "Steel Reserve" .
+
+ns1:Josephs ns1:brandName "Joseph's" .
+
+ns1:HonestKids ns1:brandName "Honest Kids" .
+
+ns1:FerreroRocher ns1:brandName "Ferrero Rocher" .
+
+ns1:WinkyDesigns ns1:brandName "Winky Designs" .
+
+ns1:TunaHelper ns1:brandName "Tuna Helper" .
+
+ns1:GoFit ns1:brandName "GoFit" .
+
+ns1:DeDe ns1:brandName "DeDe" .
+
+ns1:MrCoffee ns1:brandName "Mr. Coffee" .
+
+ns1:Lindt ns1:brandName "Lindt" .
+
+ns1:Bridgford ns1:brandName "Bridgford" .
+
+ns1:Libbys ns1:brandName "Libby's" .
+
+ns1:HouseFoods ns1:brandName "House Foods" .
+
+ns1:LALA ns1:brandName "LALA" .
+
+ns1:FollowYourHeart ns1:brandName "Follow Your Heart" .
+
+ns1:JustinVinyardsWinery ns1:brandName "Justin Vinyards & Winery" .
+
+ns1:ONeill ns1:brandName "O'Neill" .
+
+ns1:LewisBakeShop ns1:brandName "Lewis Bake Shop" .
+
+ns1:KinderBueno ns1:brandName "Kinder Bueno" .
+
+ns1:BirchBenders ns1:brandName "Birch Benders" .
+
+ns1:Teavana ns1:brandName "Teavana" .
+
+ns1:NaturalIce ns1:brandName "Natural Ice" .
+
+ns1:DelTropicoOro ns1:brandName "Del Tropico Oro" .
+
+ns1:Cinnabon ns1:brandName "Cinnabon" .
+
+ns1:BetterHomesGardens ns1:brandName "Better Homes & Gardens" .
+
+ns1:LaSalvadorena ns1:brandName "La Salvadorena" .
+
+ns1:TruFru ns1:brandName "Tru Fru" .
+
+ns1:BlackForest ns1:brandName "Black Forest" .
+
+ns1:ThePioneerWoman ns1:brandName "The Pioneer Woman" .
+
+ns1:KendallJackson ns1:brandName "Kendall-Jackson" .
+
+ns1:illy ns1:brandName "illy" .
+
+ns1:ModeloChelada ns1:brandName "Modelo Chelada" .
+
+ns1:Folios ns1:brandName "Folios" .
+
+ns1:TasteoftheSouth ns1:brandName "Taste of the South" .
+
+ns1:Bang ns1:brandName "Bang" .
+
+ns1:SteaknShake ns1:brandName "Steak вЂ�n Shake" .
+
+ns1:CALORGANIC ns1:brandName "CAL-ORGANIC" .
+
+ns1:Brainiac ns1:brandName "Brainiac" .
+
+ns1:Unite ns1:brandName "Unite" .
+
+ns1:Owens ns1:brandName "Owens" .
+
+ns1:AncientHarvest ns1:brandName "Ancient Harvest" .
+
+ns1:Tazo ns1:brandName "Tazo" .
+
+ns1:Swift ns1:brandName "Swift" .
+
+ns1:MikesHardLemonade ns1:brandName "Mike's Hard Lemonade" .
+
+ns1:ExtraordinaryBites ns1:brandName "Extraordinary Bites" .
+
+ns1:OUI ns1:brandName "OUI" .
+
+ns1:7DAYS ns1:brandName "7DAYS" .
+
+ns1:Makoto ns1:brandName "Makoto" .
+
+ns1:Wolf ns1:brandName "Wolf" .
+
+ns1:Ortega ns1:brandName "Ortega" .
+
+ns1:OriginalGourmet ns1:brandName "Original Gourmet" .
+
+ns1:Prices ns1:brandName "Price's" .
+
+ns1:Bai ns1:brandName "Bai" .
+
