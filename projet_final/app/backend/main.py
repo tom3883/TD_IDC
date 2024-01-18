@@ -12,8 +12,8 @@ g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/proj
 origins = [
     "http://localhost",
     "http://localhost:8080",
-    "http://localhost:5173",
     "http://localhost:8000",
+    "http://localhost:4200",
 ]
 
 app.add_middleware(
@@ -30,6 +30,10 @@ async def root():
     for s, p, o in g:
         print((s, p, o))
     return {"result" : "done"}
+
+@app.get("/test")
+async def root():
+    return {"result" : "test ok"}
 
 @app.get("/getProducts")
 async def root():
