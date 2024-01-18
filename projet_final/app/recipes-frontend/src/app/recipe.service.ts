@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class RecipeService {
 
-  private recipesUrl = 'http://localhost:8000/v2/getRecipes/cake';
+  private recipesUrl = 'http://localhost:8000/getRecipes/cake';
 
   constructor(private http: HttpClient) { }
 

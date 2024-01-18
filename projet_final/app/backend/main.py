@@ -53,31 +53,6 @@ async def root():
     return {"results": g.query(q)}
 
 
-@app.get("/getRecipes/{recipe_name}")
-async def read_user(recipe_name: str):
-
-    qres = g.query(
-        f"""
-        PREFIX : <http://recipes-project.com/schema#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-        SELECT  ?recipeName ?dishType
-        WHERE {{
-            ?c a :RecipeCategory ;
-            skos:prefLabel ?dishType .
-            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
-                ?recipe :name ?recipeName ;
-                :recipeCategory ?dishType .
-            }}
-        }}
-        """
-    )
-
-    results = []
-    for row in qres:
-        results.append([row.recipeName, row.dishType])
-
-    return {"results": results}
 
 @app.get("/v2/getRecipes/{recipe_name}")
 async def read_user(recipe_name: str):
@@ -85,7 +60,41 @@ async def read_user(recipe_name: str):
     qres = g.query(
         f"""
         PREFIX : <http://recipes-project.com/schema#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+        SELECT  ?recipeName ?dishType ?food
+        WHERE {{
+            ?c a :RecipeCategory ;
+            skos:prefLabel ?dishType .
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
+                ?recipe :name ?recipeName ;
+                :recipeCategory ?dishType ;
+                :recipeIngredient ?food .
+            }}
+        }}
+        """
+    )
+
+    recipes_dict = {}
+    for row in qres:
+        recipe_name = row.recipeName
+        dish_type = row.dishType
+        food = row.food
+
+        if recipe_name not in recipes_dict:
+            recipes_dict[recipe_name] = {"name": recipe_name, "dishType": dish_type, "ingredients": []}
+
+        recipes_dict[recipe_name]["ingredients"].append(food)
+
+    recipes = list(recipes_dict.values())
+
+    return {"results": recipes}
+
+@app.get("/getRecipes/{recipe_name}")
+async def read_user(recipe_name: str):
+
+    qres = g.query(
+        f"""
+        PREFIX : <http://recipes-project.com/schema#>
 
         SELECT ?recipeName ?dishType ?food
         WHERE {{
