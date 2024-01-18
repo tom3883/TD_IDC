@@ -14,7 +14,6 @@ export class RecipesComponent implements OnInit {
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
-    this.getRecipes();
   }
 
   getRecipes(): void {
@@ -23,5 +22,6 @@ export class RecipesComponent implements OnInit {
 
   onSearchChanged(query: string) {
     this.recipeService.searchRecipes(query);
+    this.getRecipes();
   }
 }

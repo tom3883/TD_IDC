@@ -17,8 +17,7 @@ export class RecipeService {
   }
 
   searchRecipes(query: string) {
-    console.log('Searching recipes for:', query);
+    const encodedQuery = encodeURIComponent(query);
+    this.recipesUrl = 'http://localhost:8000/getRecipes/'+encodedQuery;
   }
-
-
 }
