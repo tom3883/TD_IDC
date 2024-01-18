@@ -20,4 +20,8 @@ export class RecipesComponent implements OnInit {
   getRecipes(): void {
     this.recipeService.getRecipes().subscribe(recipes => this.recipes = recipes);
   }
+
+  onSearchChanged(query: string) {
+    this.recipeService.searchRecipes(query);
+  }
 }

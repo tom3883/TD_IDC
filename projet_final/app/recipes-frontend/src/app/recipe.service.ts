@@ -16,5 +16,9 @@ export class RecipeService {
     return this.http.get<Recipe[]>(this.recipesUrl);
   }
 
+  searchRecipes(query: string) {
+    console.log('Searching recipes for:', query);
+  }
+
 
 }
