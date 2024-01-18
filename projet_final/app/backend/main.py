@@ -87,21 +87,28 @@ async def read_user(recipe_name: str):
         PREFIX : <http://recipes-project.com/schema#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-        SELECT ?recipeName ?dishType
+        SELECT ?recipeName ?dishType ?food
         WHERE {{
             SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
                 ?recipe :name ?recipeName ;
-                :recipeCategory ?dishType .
+                :recipeCategory ?dishType ;
+                :recipeIngredient ?food .
             }}
         }}
         """
     )
 
-    recipes = []
+    recipes_dict = {}
     for row in qres:
-        recipes.append({
-            "name": row.recipeName,
-            "dishType": row.dishType,
-        })
+        recipe_name = row.recipeName
+        dish_type = row.dishType
+        food = row.food
+
+        if recipe_name not in recipes_dict:
+            recipes_dict[recipe_name] = {"name": recipe_name, "dishType": dish_type, "ingredients": []}
+
+        recipes_dict[recipe_name]["ingredients"].append(food)
+
+    recipes = list(recipes_dict.values())
 
     return recipes

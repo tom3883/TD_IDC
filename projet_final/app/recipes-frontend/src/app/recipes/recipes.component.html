@@ -1,9 +1,11 @@
 <h2>Recipes</h2>
 <ul class="recipes">
-  <li *ngFor="let recipe of recipes">
-    <button type="button">
-      <span class="id">{{recipe.name}} - </span>
-      <span class="name">{{recipe.dishType}}</span>
-    </button>
-  </li>
+    <div class="recipe" *ngFor="let recipe of recipes">
+      <p id="recipeName"><b>{{recipe.name}}</b></p>
+      <p id="recipeType">Recipe category : {{recipe.dishType}}</p>
+      <p>Ingredients :</p>
+      <li class="ingredients" *ngFor="let ingredient of recipe.ingredients">
+        <p id="recipeType">{{ingredient}}</p>
+      </li>
+    </div>
 </ul>

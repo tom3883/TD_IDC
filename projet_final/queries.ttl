@@ -18,17 +18,19 @@ WHERE {
 
 
 PREFIX : <http://recipes-project.com/schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> .
 
-SELECT ?recipeName ?dishType ?food ?dishType ?healthLabels ?calories
+CONSTRUCT {
+  ?recipe a :Recipe ;
+  :name ?recipeName ;
+  :recipeCategory ?dishType ;
+  :recipeIngredient [ :food ?food] .
+}
 WHERE {
-    SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {
-        ?recipe a :Recipe .
-        ?recipe :name ?recipeName .
-        ?recipe :recipeIngredient ?food .
-        ?recipe :recipeCategory ?dishType .
-        ?recipe :healthLabels ?healthLabels .
-        ?recipe :calories ?calories .
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
+        ?recipe :name ?recipeName ;
+        :recipeCategory ?dishType ;
+        :recipeIngredient ?food .
     }
 }
 
