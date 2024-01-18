@@ -3,7 +3,6 @@
 ##############################
 
 PREFIX : <http://recipes-project.com/schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#> .
 
 SELECT  ?recipeName ?dishType
 WHERE {
