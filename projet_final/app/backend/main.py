@@ -97,9 +97,11 @@ async def read_user(recipe_name: str):
         """
     )
 
-    results = []
+    recipes = []
     for row in qres:
-        results.append([row.recipeName, row.dishType])
+        recipes.append({
+            "name": row.recipeName,
+            "dishType": row.dishType,
+        })
 
-    return results
-
+    return recipes

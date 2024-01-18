@@ -17,6 +17,21 @@ WHERE {
 }
 
 
+PREFIX : <http://recipes-project.com/schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?recipeName ?dishType ?food ?dishType ?healthLabels ?calories
+WHERE {
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {
+        ?recipe a :Recipe .
+        ?recipe :name ?recipeName .
+        ?recipe :recipeIngredient ?food .
+        ?recipe :recipeCategory ?dishType .
+        ?recipe :healthLabels ?healthLabels .
+        ?recipe :calories ?calories .
+    }
+}
+
 ##############################
 ## perform the post-processing of the annotated data in order to extract only the products of the category dbo:Food
 ##############################
