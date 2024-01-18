@@ -1,5 +1,32 @@
-.recipe{
-    border-style: solid;
-    margin: 5px;
+/* Add these styles to your component's CSS file (e.g., recipes.component.css) */
+
+div.recipe {
+    border: 1px solid #ddd; /* Add a border for separation */
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
+#recipeName {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#recipeType {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.ingredients {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients p {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 0;
+}
+  

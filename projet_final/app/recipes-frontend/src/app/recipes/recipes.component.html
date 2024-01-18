@@ -1,11 +1,10 @@
 <app-search (searchChanged)="onSearchChanged($event)"></app-search>
-<ul class="recipes">
-    <div class="recipe" *ngFor="let recipe of recipes">
-      <p id="recipeName"><b>{{recipe.name}}</b></p>
-      <p id="recipeType">Recipe category : {{recipe.dishType}}</p>
-      <p>Ingredients :</p>
-      <li class="ingredients" *ngFor="let ingredient of recipe.ingredients">
-        <p id="recipeType">{{ingredient}}</p>
-      </li>
-    </div>
-</ul>
+
+<div class="recipe" *ngFor="let recipe of recipes">
+  <p id="recipeName"><b>{{recipe.name}}</b></p>
+  <p id="recipeType">Recipe category : {{recipe.dishType}}</p>
+  <p>Ingredients :</p>
+  <li class="ingredients" *ngFor="let ingredient of recipe.ingredients">
+    <p id="recipeType">{{ingredient}}</p>
+  </li>
+</div>

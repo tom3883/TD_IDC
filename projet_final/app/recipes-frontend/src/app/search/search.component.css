@@ -1,4 +1,7 @@
 /* Add these styles to your component's CSS file (e.g., recipes.component.css) */
+div {
+    margin-bottom: 16px;
+}
 
 div.search-bar {
     display: flex;
