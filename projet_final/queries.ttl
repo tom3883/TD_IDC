@@ -106,3 +106,27 @@ WHERE {
   ?product :brandName ?brandName .
   BIND(IRI(CONCAT("http://recipes-project.com/brand/", REPLACE(STR(?brandName), "[^a-zA-Z0-9]", ""))) AS ?brandUri)
 }
+
+##############################
+## append the brand URIs to the product data
+##############################
+
+PREFIX : <http://recipes-project.com/schema/>
+PREFIX brand: <http://recipes-project.com/brand/>
+
+CONSTRUCT {
+  ?product :productName ?productName ;
+                 :categoryName ?catName ;
+                 :deduced_type ?type ;
+                 :price ?price ;
+	  :brandName ?brandName ;
+  	  :brand ?brandUri .
+}
+WHERE {
+  ?product :productName ?productName ;
+                 :categoryName ?catName ;
+                 :deduced_type ?type ;
+                 :price ?price ;
+	  :brandName ?brandName .
+  ?brandUri brand:brandName ?brandName .
+}
