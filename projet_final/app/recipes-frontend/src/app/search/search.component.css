@@ -1,0 +1,30 @@
+/* Add these styles to your component's CSS file (e.g., recipes.component.css) */
+
+div.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #369; /* Green background color */
+    color: white; /* White text color */
+    border: 1px solid #369; /* Green border color */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #159; /* Darker green on hover */
+}
+  

@@ -15,6 +15,8 @@ export class SearchComponent implements OnInit {
   }
 
   onSearchClick() {
-    this.searchChanged.emit(this.searchQuery);
+    if (this.searchQuery.trim() !== '') {
+      this.searchChanged.emit(this.searchQuery);
+    }
   }
 }
