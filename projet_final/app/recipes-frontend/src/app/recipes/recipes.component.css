@@ -1,11 +1,22 @@
-/* Add these styles to your component's CSS file (e.g., recipes.component.css) */
+div.recipes-container {
+    padding: 20px;
+}
+
+div.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
 
 div.recipe {
-    border: 1px solid #ddd; /* Add a border for separation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
-    margin-bottom: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #recipeName {
@@ -29,4 +40,10 @@ div.recipe {
     margin: 0;
     padding: 4px 0;
 }
-  
+
+.recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 8px;
+}
