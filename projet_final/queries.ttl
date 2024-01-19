@@ -18,10 +18,20 @@ WHERE {
 ## link api and products
 ##############################
 
-#1 get recipes
+# 1 get recipes
 PREFIX : <http://recipes-project.com/schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT ?recipeName ?dishType ?ingredient
+CONSTRUCT {
+  ?recipe a :Recipe ;
+  :name ?recipeName ;
+  :recipeIngredient ?ingredient .
+  
+  ?category a :RecipeCategory ;
+  skos:prefLabel ?dishType .
+  
+  ?recipe :recipeCategory ?category .
+} 
 WHERE {
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
       ?recipe :name ?recipeName ;
@@ -30,7 +40,7 @@ WHERE {
     }
 }
 
-#2 get products for each ingredient
+# 2 get products for each ingredient
 PREFIX : <http://recipes-project.com/schema/>
 
 SELECT ?productName ?price ?brand
@@ -38,22 +48,6 @@ WHERE {
     ?p :productName ?productName ;
     :price ?price ;
     :brandName ?brand .
-}
-
-# MERGED VERSION BUT DOES NOT WORK
-PREFIX : <http://recipes-project.com/schema#>
-
-SELECT DISTINCT *
-WHERE {  
-  ?p :productName ?productName ;
-  :price ?price ;
-  :brandName ?brand .
-
-  SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
-    ?recipe :name ?recipeName ;
-    :recipeCategory ?dishType ;
-    :recipeIngredient ?ingredient .
-  }
 }
 
 ##############################

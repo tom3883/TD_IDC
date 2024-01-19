@@ -5,9 +5,9 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 g = Graph()
-g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_schema.ttl")
-g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_product_categories.ttl")
-g.parse("/Users/thomaspaul/Documents/Polytech/S9/IngenierieConnaissances/TD/projet_final/recipe_categories.ttl")
+g.parse("../../recipe_schema.ttl")
+g.parse("../../recipe_product_categories.ttl")
+g.parse("../../recipe_categories.ttl")
 
 origins = [
     "http://localhost",
@@ -121,3 +121,15 @@ async def read_user(recipe_name: str):
     recipes = list(recipes_dict.values())
 
     return recipes
+
+@app.get("/v3/getRecipes/{recipe_name}")
+async def read_user(recipe_name: str):
+    gRecipes = Graph()
+    
+    gRecipes.parse("../../recipe_schema.ttl")
+
+    for s, p, o in g:
+        print((s, p, o))
+
+    return {"done"}
+
