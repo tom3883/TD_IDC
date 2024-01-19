@@ -8,6 +8,7 @@ g = Graph()
 g.parse("../../recipe_schema.ttl")
 g.parse("../../recipe_product_categories.ttl")
 g.parse("../../recipe_categories.ttl")
+g.parse("../../csvw/walmart_products_complete.ttl")
 
 origins = [
     "http://localhost",
@@ -26,14 +27,8 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    print("--- printing raw triples ---")
-    for s, p, o in g:
-        print((s, p, o))
-    return {"result" : "done"}
+    return {"result" : len(g)}
 
-@app.get("/test")
-async def root():
-    return {"result" : "test ok"}
 
 @app.get("/getProducts")
 async def root():
@@ -51,7 +46,6 @@ async def root():
         results.append(r["n"])
 
     return {"results": g.query(q)}
-
 
 
 @app.get("/v2/getRecipes/{recipe_name}")
@@ -89,6 +83,7 @@ async def read_user(recipe_name: str):
 
     return {"results": recipes}
 
+
 @app.get("/getRecipes/{recipe_name}")
 async def read_user(recipe_name: str):
 
@@ -122,14 +117,41 @@ async def read_user(recipe_name: str):
 
     return recipes
 
+
 @app.get("/v3/getRecipes/{recipe_name}")
 async def read_user(recipe_name: str):
-    gRecipes = Graph()
-    
-    gRecipes.parse("../../recipe_schema.ttl")
 
-    for s, p, o in g:
-        print((s, p, o))
+    qres_recipes = g.query(
+        f"""
+        PREFIX : <http://recipes-project.com/schema#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-    return {"done"}
+        CONSTRUCT {{
+            ?recipe a :Recipe ;
+            :name ?recipeName ;
+            :recipeIngredient ?ingredient ;
+            :recipeCategory ?category .
+            
+            ?category a :RecipeCategory ;
+            skos:prefLabel ?dishType .
 
+        }}
+        WHERE {{
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
+                ?recipe :name ?recipeName ;
+                :recipeCategory ?dishType ;
+                :recipeIngredient ?ingredient .
+            }}
+        }}
+        """
+    )
+
+    results = []
+    for row in qres_recipes:
+        print(row)
+        """ recipe_data = {
+            "recipeName" : row[2]
+        }
+        results.append(recipe_data) """
+
+    return {"done" : results}

@@ -1,4 +1,4 @@
-@prefix ns1: <http://recipes-project.com/schema/> .
+@prefix ns1: <http://recipes-project.com/schema#> .
 
 
 <http://recipes-project.com/products/193341> ns1:brand <http://recipes-project.com/brand/Sargento> ;
