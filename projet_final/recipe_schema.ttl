@@ -57,19 +57,17 @@
 
 :RecipeInformation a owl:Class ;
     owl:disjointUnionOf
-    ( :Recipe :NutritionInformation :RecipeCategory ) .
-
+    ( :NutritionInformation :RecipeCategory ) .
 
 # Classes related to products #
 
 :Product a owl:Class ;
     rdfs:label "Product"@en ;
     owl:equivalentClass s:Product ;
+    owl:disjontWith :Ingredient ;
     rdfs:subClassOf [a owl:Restriction; owl:onProperty :productCategory; owl:allValuesFrom :ProductCategory],
                     [a owl:Restriction;owl:onProperty :productCategory; owl:onClass :ProductCategory; owl:qualifiedCardinality 1] ,
                     [a owl:Restriction; owl:onProperty :brand; owl:allValuesFrom :Brand],
-                    [a owl:Restriction; owl:onProperty :brandName; owl:allValuesFrom xsd:string],
-                    [a owl:Restriction; owl:onProperty :brandName; owl:maxCardinality 1],
                     [a owl:Restriction; owl:onProperty :brand; owl:onClass :Brand; owl:qualifiedCardinality 1] ,
                     [a owl:Restriction; owl:onProperty :productName; owl:allValuesFrom xsd:string],
                     [a owl:Restriction; owl:onProperty :productName; owl:maxCardinality 1] ,
@@ -166,6 +164,7 @@
 :brandName a owl:FunctionalProperty ;
     rdfs:label "name"@en ;
     owl:equivalentProperty :name ;
+    rdfs:domain :Brand ;
     rdfs:range xsd:string .
 
 :categoryName a owl:FunctionalProperty ;
