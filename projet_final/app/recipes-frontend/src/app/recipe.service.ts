@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Recipe } from './recipe'
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { log } from 'console';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class RecipeService {
   }
 
   searchRecipes(query: string) {
-    const encodedQuery = encodeURIComponent(query);
+    const encodedQuery = query.replace(/ /g, '+');  
     this.recipesUrl = 'http://localhost:8000/getRecipes/'+encodedQuery;
   }
 }
