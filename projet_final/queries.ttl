@@ -61,7 +61,7 @@ WHERE {
            :recipeCategory ?dishType ;
            :recipeIngredient ?ingredient .
     }
-    FILTER (STR(?productName), STR(?ingredient))
+    FILTER (STR(?productName) = STR(?ingredient))
 }
 
 ##############################
