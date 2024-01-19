@@ -29,61 +29,6 @@ app.add_middleware(
 async def root():
     return {"result" : len(g)}
 
-
-@app.get("/getProducts")
-async def root():
-    g.parse('../../csvw/walmart_products_reduced.ttl')
-
-    q = """
-        PREFIX : <http://recipes-project.com/schema/>
-        select ?n where {
-            ?p :productName ?n
-        }
-    """
-
-    results = []
-    for r in g.query(q):
-        results.append(r["n"])
-
-    return {"results": g.query(q)}
-
-
-@app.get("/v2/getRecipes/{recipe_name}")
-async def read_user(recipe_name: str):
-
-    qres = g.query(
-        f"""
-        PREFIX : <http://recipes-project.com/schema#>
-
-        SELECT  ?recipeName ?dishType ?food
-        WHERE {{
-            ?c a :RecipeCategory ;
-            skos:prefLabel ?dishType .
-            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
-                ?recipe :name ?recipeName ;
-                :recipeCategory ?dishType ;
-                :recipeIngredient ?food .
-            }}
-        }}
-        """
-    )
-
-    recipes_dict = {}
-    for row in qres:
-        recipe_name = row.recipeName
-        dish_type = row.dishType
-        food = row.food
-
-        if recipe_name not in recipes_dict:
-            recipes_dict[recipe_name] = {"name": recipe_name, "dishType": dish_type, "ingredients": []}
-
-        recipes_dict[recipe_name]["ingredients"].append(food)
-
-    recipes = list(recipes_dict.values())
-
-    return {"results": recipes}
-
-
 @app.get("/getRecipes/{recipe_name}")
 async def read_user(recipe_name: str):
 
@@ -118,40 +63,64 @@ async def read_user(recipe_name: str):
     return recipes
 
 
-@app.get("/v3/getRecipes/{recipe_name}")
-async def read_user(recipe_name: str):
+@app.get("/v3/getProducts")
+async def read_user():
 
-    qres_recipes = g.query(
+    qres = g.query(
         f"""
         PREFIX : <http://recipes-project.com/schema#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-        CONSTRUCT {{
-            ?recipe a :Recipe ;
-            :name ?recipeName ;
-            :recipeIngredient ?ingredient ;
-            :recipeCategory ?category .
-            
-            ?category a :RecipeCategory ;
-            skos:prefLabel ?dishType .
-
-        }}
+        SELECT ?recipeName ?dishType ?ingredient ?productName
         WHERE {{
-            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
-                ?recipe :name ?recipeName ;
+            ?product :productName ?productName .
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {{
+                ?r :name ?recipeName ;
                 :recipeCategory ?dishType ;
                 :recipeIngredient ?ingredient .
             }}
+            FILTER (STR(?productName) = STR(?ingredient))
         }}
         """
     )
 
-    results = []
-    for row in qres_recipes:
+    result = []
+    for row in qres:
         print(row)
-        """ recipe_data = {
-            "recipeName" : row[2]
-        }
-        results.append(recipe_data) """
 
-    return {"done" : results}
+    return result
+
+
+@app.get("/v3/getRecipes/{recipe_name}")
+async def read_user(recipe_name: str):
+
+    qres = g.query(
+        f"""
+        PREFIX : <http://recipes-project.com/schema#>
+
+        SELECT ?recipeName ?dishType ?ingredient ?productName
+        WHERE {{
+            ?product :productName ?productName .
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
+                ?r :name ?recipeName ;
+                :recipeCategory ?dishType ;
+                :recipeIngredient ?ingredient .
+            }}
+            FILTER (STR(?productName) = STR(?ingredient))
+        }}
+        """
+    )
+
+    recipes_dict = {}
+    for row in qres:
+        recipe_name = row.recipeName
+        dish_type = row.dishType
+        food = row.food
+
+        if recipe_name not in recipes_dict:
+            recipes_dict[recipe_name] = {"name": recipe_name, "dishType": dish_type, "ingredients": []}
+
+        recipes_dict[recipe_name]["ingredients"].append(food)
+
+    recipes = list(recipes_dict.values())
+
+    return recipes
