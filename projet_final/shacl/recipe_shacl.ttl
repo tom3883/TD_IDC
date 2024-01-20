@@ -7,9 +7,31 @@ shapes:recipe a sh:NodeShape ;
   sh:targetClass :Recipe ;
   sh:property [
     sh:path :recipeIngredient ;
+    sh:class :Ingredient;
     sh:minCount 1 ;
   ] ;
   sh:property [
+    sh:path :recipeInstructions ;
+    sh:datatype xsd:string ;
+    sh:minLength 1;
+  ] ;
+  sh:property [
+    sh:path :healthLabels ;
+    sh:datatype xsd:string ;
+  ] ;
+  sh:property [
     sh:path :recipeCategory ;
-    sh:minCount 0 ;
+    sh:class :RecipeCategory;
+    sh:minCount 1 ;
+    sh:maxCount 1;
+  ] .
+
+shapes:nutrition_information a sh:NodeShape ;
+  sh:targetClass :NutritionInformation ;
+  sh:property [
+    sh:path :calories ;
+    sh:datatype xsd:float;
+    sh:minInclusive 0; 
+    sh:minCount 1 ;
+    sh:maxCount 1;
   ] .

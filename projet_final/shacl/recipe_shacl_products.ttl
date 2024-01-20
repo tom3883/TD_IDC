@@ -8,6 +8,7 @@ shapes:product a sh:NodeShape ;
   sh:property [
     sh:path :price ;
     sh:datatype xsd:float;
+    sh:minInclusive 0.0;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
@@ -29,3 +30,13 @@ shapes:product_type a sh:NodeShape;
   sh:targetObjectsOf :deduced_type;
   sh:nodeKind sh:IRI;
   sh:pattern "dbpedia". 
+
+shapes:product_category a sh:NodeShape;
+  sh:targetClass :ProductCategory;
+  sh:property [
+    sh:path :categoryName;
+    sh:datatype xsd:string;
+    sh:minLength 1;
+    sh:minCount 1;
+    sh:maxCount 1;
+  ].

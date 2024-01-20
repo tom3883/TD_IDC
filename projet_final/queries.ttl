@@ -109,3 +109,19 @@ WHERE {
 	  :brandName ?brandName .
   ?brandUri brand:brandName ?brandName .
 }
+
+
+###############################
+## type the brands in the brand data
+###############################
+PREFIX s: <http://recipes-project.com/schema#> .
+PREFIX ns1: <http://recipes-project.com/brand#> .
+
+CONSTRUCT {
+  ?brand a s:Brand .
+  ?brand ?x ?y .
+}
+WHERE {
+  ?brand ?x ?y.
+}
+
