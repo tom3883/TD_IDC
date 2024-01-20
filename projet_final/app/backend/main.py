@@ -70,29 +70,30 @@ async def read_user(recipe_name: str):
     """
     results = sparql_service_update(wds_Corese, query)
 
-    recipes = {}
+    recipes = []
     # process response
     for row in results:
         recipe_name = row[0]
         category = row[1]
-        ingredient = row[2]  # Assuming that the ingredient is in the third column (index 2)
+        ingredient = row[2]
         product_name = row[3]
         price = row[4]
         brandName = row[5]
 
-        recipe_key = f"{recipe_name}_{category}"
+        existing_recipe = next((recipe for recipe in recipes if recipe['recipeName'] == recipe_name and recipe['category'] == category), None)
 
-        if recipe_key not in recipes:
-            # If not, initialize the entry with empty lists for ingredients and products
-            recipes[recipe_key] = {'recipeName': recipe_name, 'category': category, 'ingredients': [], 'products': []}
-        
-        recipes[recipe_key]['ingredients'].append(ingredient)
-        
+        if existing_recipe is None:
+            new_recipe = {'recipeName': recipe_name, 'category': category, 'ingredients': [], 'products': []}
+            recipes.append(new_recipe)
+        else:
+            new_recipe = existing_recipe
+
+        # Append the ingredient to the 'ingredients' list
+        new_recipe['ingredients'].append(ingredient)
+
+        # Append the product and its price to the 'products' list
         if product_name is not None and price is not None:
-            recipes[recipe_key]['products'].append({
-                'productName': product_name, 
-                'price': price,
-                'brand': brandName
-            })
+            new_recipe['products'].append({'productName': product_name, 'price': price, 'brand' : brandName})
+
 
     return recipes
