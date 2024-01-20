@@ -1,7 +1,7 @@
-prefix sh: <http://www.w3.org/ns/shacl#> .
-prefix : <http://recipes-project.com/schema#> .
-prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-prefix shapes: <http://recipes-project.com/shapes#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://recipes-project.com/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix shapes: <http://recipes-project.com/shapes#> .
 
 shapes:product a sh:NodeShape ;
   sh:targetClass :Product ;
@@ -20,6 +20,7 @@ shapes:product a sh:NodeShape ;
   sh:property [
     sh:path :productName;
     sh:datatype xsd:string;
+    sh:minLength 1;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] .

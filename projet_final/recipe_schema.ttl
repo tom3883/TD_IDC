@@ -35,7 +35,7 @@
                      
 
 :NutritionInformation a owl:Class ;
-    rdfs:label "Nutrition I nformation"@en ;
+    rdfs:label "Nutrition Information"@en ;
     owl:equivalentClass s:NutritionInformation ;
     rdfs:subClassOf [a owl:Restriction; owl:onProperty :calories; owl:allValuesFrom xsd:float],
                     [a owl:Restriction; owl:onProperty :calories; owl:minCardinality 1],

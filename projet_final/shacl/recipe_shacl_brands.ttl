@@ -3,13 +3,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix shapes: <http://recipes-project.com/shapes#> .
 
-shapes:recipe a sh:NodeShape ;
-  sh:targetClass :Recipe ;
+shapes:brand a sh:NodeShape ;
+  sh:targetClass :Brand ;
   sh:property [
-    sh:path :recipeIngredient ;
+    sh:path :brandName ;
+    sh:datatype xsd:string;
+    sh:minLength 1;
     sh:minCount 1 ;
-  ] ;
-  sh:property [
-    sh:path :recipeCategory ;
-    sh:minCount 0 ;
+    sh:maxCount 1
   ] .
