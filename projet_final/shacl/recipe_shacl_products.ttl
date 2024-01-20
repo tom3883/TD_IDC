@@ -7,16 +7,24 @@ shapes:product a sh:NodeShape ;
   sh:targetClass :Product ;
   sh:property [
     sh:path :price ;
+    sh:datatype xsd:float;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
+    sh:path :brand ;
+    sh:class :Brand;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+    sh:property [
     sh:path :brand ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
   sh:property [
     sh:path :productCategory ;
+    sh:class :ProductCategory;
     sh:minCount 0 ;
     sh:maxCount 1 ;
   ] .

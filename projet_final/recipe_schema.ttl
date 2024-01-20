@@ -38,6 +38,7 @@
     rdfs:label "Nutrition I nformation"@en ;
     owl:equivalentClass s:NutritionInformation ;
     rdfs:subClassOf [a owl:Restriction; owl:onProperty :calories; owl:allValuesFrom xsd:float],
+                    [a owl:Restriction; owl:onProperty :calories; owl:minCardinality 1],
                     [a owl:Restriction;owl:onProperty :calories; owl:maxCardinality 1] .
 
 :RecipeCategory a owl:Class ;
@@ -52,6 +53,7 @@
     owl:equivalentClass db:Ingredient ;
     owl:disjontWith :Product ;
     rdfs:subClassOf [a owl:Restriction; owl:onProperty :name; owl:allValuesFrom xsd:string],
+                    [a owl:Restriction; owl:onProperty :name; owl:minCardinality 1],
                     [a owl:Restriction; owl:onProperty :name; owl:maxCardinality 1].
 
 
@@ -70,10 +72,10 @@
                     [a owl:Restriction; owl:onProperty :brand; owl:allValuesFrom :Brand],
                     [a owl:Restriction; owl:onProperty :brand; owl:onClass :Brand; owl:qualifiedCardinality 1] ,
                     [a owl:Restriction; owl:onProperty :productName; owl:allValuesFrom xsd:string],
+                    [a owl:Restriction; owl:onProperty :productName; owl:minCardinality 1],
                     [a owl:Restriction; owl:onProperty :productName; owl:maxCardinality 1] ,
-                    [a owl:Restriction; owl:onProperty :categoryName; owl:allValuesFrom :ProductCategory],
-                    [a owl:Restriction; owl:onProperty :ProductCategory; owl:onClass :ProductCategory; owl:qualifiedCardinality 1] ,
                     [a owl:Restriction; owl:onProperty :price; owl:allValuesFrom xsd:float],
+                    [a owl:Restriction; owl:onProperty :price; owl:minCardinality 1],
                     [a owl:Restriction; owl:onProperty :price; owl:maxCardinality 1] ,
                     [a owl:Restriction; owl:onProperty :deduced_type; owl:maxCardinality 1],
                     [a owl:Restriction; owl:onProperty :deduced_type; owl:someValuesFrom :ProductCategory] .
@@ -83,12 +85,16 @@
     owl:hasKey :brandName ;
     owl:equivalentClass s:Brand ;
     rdfs:subClassOf [a owl:Restriction; owl:onProperty :brandName; owl:maxCardinality 1],
+                    [a owl:Restriction; owl:onProperty :brandName; owl:minCardinality 1],
                     [a owl:Restriction; owl:onProperty :brandName; owl:allValuesFrom xsd:string] .
 
 :ProductCategory a owl:Class ;
     rdfs:label "Product Category"@en ;
     rdfs:definition "Products can be classed in different categories"@en ;
     owl:differentFrom :RecipeCategory ;
+    rdfs:subClassOf [a owl:Restriction; owl:onProperty :categoryName; owl:allValuesFrom xsd:string],
+                    [a owl:Restriction; owl:onProperty :categoryName; owl:minCardinality 1],
+                    [a owl:Restriction; owl:onProperty :categoryName; owl:maxCardinality 1] ;
     rdfs:subClassOf :Category .
 
 [] a owl:AllDisjointClasses ;
@@ -170,7 +176,7 @@
 :categoryName a owl:FunctionalProperty ;
     rdfs:label "name"@en ;
     owl:equivalentProperty :name ;
-    rdfs:domain :Product ;
+    rdfs:domain :ProductCategory ;
     rdfs:range xsd:string .
 
 :price a owl:DatatypeProperty ;
