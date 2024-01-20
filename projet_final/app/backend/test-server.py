@@ -3,7 +3,7 @@ import pandas as pd
 from SPARQLWrapper import JSON, POST, POSTDIRECTLY, SPARQLWrapper
 
 
-def sparql_service_update(service, update_query):
+def sparql_service_update(service, query):
     """
     Helper function to update (DELETE DATA, INSERT DATA, DELETE/INSERT) data.
 

@@ -18,50 +18,21 @@ WHERE {
 ## link api and products
 ##############################
 
-# construct recipes
-PREFIX : <http://recipes-project.com/schema#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-CONSTRUCT {
-    ?recipe a :Recipe ;
-    :name ?recipeName ;
-    :recipeIngredient ?ingredient .
-    
-    ?category a :RecipeCategory ;
-    skos:prefLabel ?dishType .
-    
-    ?recipe :recipeCategory ?category .
-}
-WHERE {
-    SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
-        ?recipe :name ?recipeName ;
-        :recipeCategory ?dishType ;
-        :recipeIngredient ?ingredient .
-    }
-}
-
-# 2 get products for each ingredient
+# federated query
 PREFIX : <http://recipes-project.com/schema#>
 
-SELECT ?productName ?price ?brand
+SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price
 WHERE {
-    ?p :productName ?productName ;
-    :price ?price ;
-    :brandName ?brand .
-}
-
-# 4 federated query
-PREFIX : <http://recipes-project.com/schema#>
-
-SELECT DISTINCT ?recipeName ?dishType ?ingredient ?productName
-WHERE {
-    ?product :productName ?productName .
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
         ?r :name ?recipeName ;
            :recipeCategory ?dishType ;
            :recipeIngredient ?ingredient .
     }
-    FILTER (STR(?productName) = STR(?ingredient))
+    OPTIONAL {
+       ?product :productName ?productName ;
+       :price ?price .
+       FILTER (STR(?productName) = STR(?ingredient)) 
+    }
 }
 
 ##############################
