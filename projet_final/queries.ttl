@@ -53,7 +53,7 @@ WHERE {
 # 4 federated query
 PREFIX : <http://recipes-project.com/schema#>
 
-SELECT ?recipeName ?dishType ?ingredient ?productName
+SELECT DISTINCT ?recipeName ?dishType ?ingredient ?productName
 WHERE {
     ?product :productName ?productName .
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {

@@ -1,0 +1,37 @@
+prefix st: <http://ns.inria.fr/sparql-template/>
+prefix sw: <http://ns.inria.fr/sparql-workflow/>
+
+#############
+# EndPoints #
+#############
+
+# Default EndPoints, available at http://localhost:8080/sparql
+st:user a st:Server;
+    st:content <#loadData>.
+
+st:access st:namespace
+    <http://localhost/>.
+
+############
+# Workflow #
+############
+
+<#loadData> a st:Workflow;
+    sw:body (
+        [
+            a sw:Load;
+            sw:path <../../recipe_schema.ttl>;
+        ]
+        [
+            a sw:Load;
+            sw:path <../../recipe_product_categories.ttl>;
+        ]
+        [
+            a sw:Load;
+            sw:path <../../recipe_categories.ttl>;
+        ]
+        [
+            a sw:Load;
+            sw:path <../../csvw/walmart_products_complete.ttl>;
+        ]
+    ).
