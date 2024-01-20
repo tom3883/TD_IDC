@@ -1,3 +1,5 @@
+/* Add these styles to your component's CSS file (e.g., recipes.component.css) */
+
 div.recipes-container {
     padding: 20px;
 }
@@ -40,10 +42,29 @@ div.recipe {
     margin: 0;
     padding: 4px 0;
 }
-
-.recipe-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 8px;
+  
+.productTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.products {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.products p {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 0;
+    color: #555;
+}
+
+#product {
+    font-weight: bold;
+}
+  

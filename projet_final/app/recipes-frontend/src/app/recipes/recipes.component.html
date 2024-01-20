@@ -11,7 +11,7 @@
       </li>
 
       <div *ngIf="recipe.products && recipe.products.length > 0">
-        <p>Product(s) :</p>
+        <p class="productTitle">Walmart product(s) available :</p>
         <li class="products" *ngFor="let product of recipe.products">
           <p id="product">{{product.productName}} - ${{product.price}} - Brand : {{product.brand}}</p>
         </li>
