@@ -77,8 +77,7 @@
                     [a owl:Restriction; owl:onProperty :price; owl:allValuesFrom xsd:float],
                     [a owl:Restriction; owl:onProperty :price; owl:minCardinality 1],
                     [a owl:Restriction; owl:onProperty :price; owl:maxCardinality 1] ,
-                    [a owl:Restriction; owl:onProperty :deduced_type; owl:maxCardinality 1],
-                    [a owl:Restriction; owl:onProperty :deduced_type; owl:someValuesFrom :ProductCategory] .
+                    [a owl:Restriction; owl:onProperty :deduced_type; owl:maxCardinality 1] .
 
 :Brand a owl:Class ;
     rdfs:label "Brand"@en ;

@@ -17,14 +17,14 @@ shapes:product a sh:NodeShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
   ] ;
-    sh:property [
-    sh:path :brand ;
+  sh:property [
+    sh:path :productName;
+    sh:datatype xsd:string;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-  ] ;
-  sh:property [
-    sh:path :productCategory ;
-    sh:class :ProductCategory;
-    sh:minCount 0 ;
-    sh:maxCount 1 ;
   ] .
+
+shapes:product_type a sh:NodeShape;
+  sh:targetObjectsOf :deduced_type;
+  sh:nodeKind sh:IRI;
+  sh:pattern "dbpedia". 
