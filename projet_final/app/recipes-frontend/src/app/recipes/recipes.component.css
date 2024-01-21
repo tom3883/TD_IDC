@@ -1,5 +1,13 @@
 /* Add these styles to your component's CSS file (e.g., recipes.component.css) */
 
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #369;
+    margin-top: 15px;
+}
+
 div.recipes-container {
     padding: 20px;
 }
