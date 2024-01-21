@@ -125,3 +125,24 @@ WHERE {
   ?brand ?x ?y.
 }
 
+
+###############################
+## look for all the products of category "Wine" for recipes of keyword "Wine" 
+###############################
+
+PREFIX : <http://recipes-project.com/schema#>
+
+SELECT  DISTINCT  ?brand ?productName ?price ?categoryName ?recipeName 
+WHERE {
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=wine> {
+        ?r :name ?recipeName ;
+           :recipeCategory ?dishType ;
+           :recipeIngredient ?ingredient .
+    }
+       ?product :productName ?productName ;
+	:categoryName ?categoryName;
+               :brand ?brand ;
+               :price ?price .
+       FILTER (STR(?productName) = STR(?ingredient)) 
+       FILTER (?categoryName == "Wine")
+}
