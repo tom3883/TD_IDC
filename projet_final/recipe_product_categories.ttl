@@ -1,5 +1,5 @@
 @prefix products: <http://recipes-project.com/products#> .
-@base <http://recipes-project.com/recipe_product_categories> .
+@base <http://recipes-project.com/recipe_product_categories/> .
 @prefix dbc:    <http://dbpedia.org/page/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

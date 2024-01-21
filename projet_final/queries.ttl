@@ -146,3 +146,39 @@ WHERE {
        FILTER (STR(?productName) = STR(?ingredient)) 
        FILTER (?categoryName == "Wine")
 }
+
+###############################
+## retrieve all the products related to the schema-defined category "Dairy" for recipes of keyword "yogurt" 
+###############################
+
+PREFIX : <http://recipes-project.com/schema#>
+PREFIX dbo: <https://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX db: <http://dbpedia.org/resource/>
+PREFIX cat: <http://recipes-project.com/recipe_product_categories/>
+PREFIX dbc:    <http://dbpedia.org/page/>
+PREFIX dcterms: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#subject>
+
+SELECT  DISTINCT  ?productName ?deduced_type ?recipeName 
+WHERE {
+      SERVICE <http://localhost/service/edamam/findRecipes?keyword=yogurt> {
+        ?r :name ?recipeName ;
+           :recipeCategory ?dishType ;
+           :recipeIngredient ?ingredient .
+       }
+       ?category a cat:ProductCategory;
+	skos:closeMatch ?cat .
+       ?product :productName ?productName ;
+	:deduced_type ?deduced_type;
+       OPTIONAL {
+       FILTER (STR(?productName) = STR(?ingredient)) 
+       
+       FILTER EXISTS {
+       SERVICE <http://dbpedia.org/sparql> {
+                ?deduced_type dcterms:subject ?c .
+                ?c skos:broader  ?cat .
+        }
+    }
+  }
+}
