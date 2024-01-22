@@ -15,7 +15,7 @@ WHERE {
 }
 
 ##############################
-## link api and products
+## get recipes with the product sold at walmart
 ##############################
 
 # federated query
@@ -31,7 +31,26 @@ WHERE {
     OPTIONAL {
        ?product :productName ?productName ;
        :price ?price .
-       FILTER (STR(?productName) = STR(?ingredient)) 
+       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+    }
+}
+
+# ingredients 
+PREFIX : <http://recipes-project.com/schema#>
+
+SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price
+WHERE {
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=yogurt> {
+        ?r :name ?recipeName ;
+           :recipeCategory ?dishType ;
+           :recipeIngredient ?ingredient .
+    }
+    OPTIONAL { FILTER CONTAINS(STR(?ingredient), "yogurt") }
+    OPTIONAL {
+       ?product :productName ?productName ;
+       :price ?price ;
+       :categoryName ?categoryName .
+       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
     }
 }
 
