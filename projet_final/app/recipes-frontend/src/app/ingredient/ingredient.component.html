@@ -1,2 +1,4 @@
 <h1>Search Recipes With Ingredient</h1>
-<app-search [placeholder]="'Enter an ingredient here...'"></app-search>
+<app-search 
+    (searchChanged)="onSearchChanged($event)" 
+    [placeholder]="'Enter an ingredient here...'"></app-search>
