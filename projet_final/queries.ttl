@@ -206,3 +206,30 @@ WHERE {
     }
   }
 }
+
+###############################
+## retrieve all the recipes of yogurts that can be done with the products of the brand "Chobani" 
+###############################
+
+PREFIX : <http://recipes-project.com/schema#>
+PREFIX brand: <http://recipes-project.com/brand#>
+
+SELECT  DISTINCT ?recipeName ?dishType ?ingredientName ?productName ?price
+WHERE {
+    SERVICE <http://localhost/service/edamam/findRecipes?keyword=yogurt> {
+        ?r :name ?recipeName ;
+           :recipeCategory ?dishType ;
+           :recipeIngredient ?ingredient .
+    }
+    BIND(REPLACE(STR(?ingredient),STR(?ingredient), lcase(STR(?ingredient))) AS ?ingredientName) .
+    OPTIONAL { FILTER CONTAINS(lcase(STR(?ingredient)), "yogurt") }
+    OPTIONAL {
+       ?product :productName ?productName ;
+       :price ?price ;
+       :brandName ?brandName;
+       :categoryName ?categoryName .
+       ?brand :brandName ?brandName.
+       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredientName))) 
+       FILTER (?brand == brand:Chobani)
+    }
+}
