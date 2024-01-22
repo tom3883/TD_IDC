@@ -2,3 +2,23 @@
 <app-search 
     (searchChanged)="onSearchChanged($event)" 
     [placeholder]="'Enter an ingredient here...'"></app-search>
+
+    <div class="recipes-container">
+        <div class="recipes-grid">
+            <div class="recipe" *ngFor="let recipe of recipes">
+            <p id="recipeName"><b>{{recipe.recipeName}}</b></p>
+            <p id="recipeType">Recipe category : {{recipe.category}}</p>
+            <p>Ingredients :</p>
+            <li class="ingredients" *ngFor="let ingredient of recipe.ingredients">
+                <p id="recipeType">{{ingredient}}</p>
+            </li>
+        
+            <div *ngIf="recipe.products && recipe.products.length > 0">
+                <p class="productTitle">Walmart product(s) available :</p>
+                <li class="products" *ngFor="let product of recipe.products">
+                <p id="product">{{product.productName}} - ${{product.price}} - Brand : {{product.brand}}</p>
+                </li>
+            </div>
+            </div>
+        </div>
+    </div>
