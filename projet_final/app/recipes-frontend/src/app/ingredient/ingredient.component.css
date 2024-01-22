@@ -1,9 +1,17 @@
-h1 {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #369;
     margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #369;
+}
+
+p {
+    text-align: center;
 }
 
 div.recipes-container {

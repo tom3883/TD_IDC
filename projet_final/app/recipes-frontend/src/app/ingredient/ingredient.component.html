@@ -1,6 +1,10 @@
-<h1>Search Recipes With Ingredient</h1>
-<app-search 
-    (searchChanged)="onSearchChanged($event)" 
+<div class="header">
+    <h1>In my fridge I have...</h1>
+    <p>This section lets you find recipes with products you have.<br>
+        E.g: you have yogurt in your fridge, you will find recipes with this ingredient.</p>
+</div>
+<app-search
+    (searchChanged)="onSearchChanged($event)"
     [placeholder]="'Enter an ingredient here...'"></app-search>
 
     <div class="recipes-container">
