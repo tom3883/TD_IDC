@@ -95,5 +95,55 @@ async def read_user(recipe_name: str):
         if product_name is not None and price is not None:
             new_recipe['products'].append({'productName': product_name, 'price': price, 'brand' : brandName})
 
+    return recipes
+
+
+@app.get("/getRecipesInFridge/{ingredient_name}")
+async def read_user(ingredient_name: str):
+    query = f"""
+        PREFIX : <http://recipes-project.com/schema#>
+
+        SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price ?brandName
+        WHERE {{
+            SERVICE <http://localhost/service/edamam/findRecipes?keyword={ingredient_name}> {{
+                ?r :name ?recipeName ;
+                :recipeCategory ?dishType ;
+                :recipeIngredient ?ingredient .
+            }}
+            OPTIONAL {{ FILTER CONTAINS(lcase(STR(?ingredient)), "{ingredient_name}") }}
+            OPTIONAL {{
+                ?product :productName ?productName ;
+                :price ?price ;
+                :brandName ?brandName .
+                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+            }}
+        }}
+    """
+    results = sparql_service_update(wds_Corese, query)
+
+    recipes = []
+    # process response
+    for row in results:
+        recipe_name = row[0]
+        category = row[1]
+        ingredient = row[2]
+        product_name = row[3]
+        price = row[4]
+        brandName = row[5]
+
+        existing_recipe = next((recipe for recipe in recipes if recipe['recipeName'] == recipe_name and recipe['category'] == category), None)
+
+        if existing_recipe is None:
+            new_recipe = {'recipeName': recipe_name, 'category': category, 'ingredients': [], 'products': []}
+            recipes.append(new_recipe)
+        else:
+            new_recipe = existing_recipe
+
+        # Append the ingredient to the 'ingredients' list
+        new_recipe['ingredients'].append(ingredient)
+
+        # Append the product and its price to the 'products' list
+        if product_name is not None and price is not None:
+            new_recipe['products'].append({'productName': product_name, 'price': price, 'brand' : brandName})
 
     return recipes

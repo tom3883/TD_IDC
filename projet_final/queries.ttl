@@ -45,7 +45,7 @@ WHERE {
            :recipeCategory ?dishType ;
            :recipeIngredient ?ingredient .
     }
-    OPTIONAL { FILTER CONTAINS(STR(?ingredient), "yogurt") }
+    OPTIONAL { FILTER CONTAINS(lcase(STR(?ingredient)), "yogurt") }
     OPTIONAL {
        ?product :productName ?productName ;
        :price ?price ;
