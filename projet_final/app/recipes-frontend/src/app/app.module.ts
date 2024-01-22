@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ProductsComponent } from './products/products.component';
+import { IngredientComponent } from './ingredient/ingredient.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { ProductsComponent } from './products/products.component';
     RecipesComponent,
     SearchComponent,
     NavbarComponent,
-    ProductsComponent,
+    IngredientComponent,
   ],
   imports: [
     BrowserModule,
