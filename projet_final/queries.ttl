@@ -170,7 +170,7 @@ WHERE {
 }
 
 ###############################
-## retrieve all the products related to the schema-defined category "Dairy" for recipes of keyword "yogurt" 
+## retrieve all the products related to the schema-defined category "Dairy"
 ###############################
 
 PREFIX : <http://recipes-project.com/schema#>
@@ -180,7 +180,8 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX db: <http://dbpedia.org/resource/>
 PREFIX cat: <http://recipes-project.com/recipe_product_categories/>
 PREFIX dbc:    <http://dbpedia.org/page/>
-PREFIX dcterms: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#subject>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
 
 SELECT  DISTINCT  ?productName ?deduced_type ?recipeName 
 WHERE {
@@ -190,9 +191,10 @@ WHERE {
            :recipeIngredient ?ingredient .
        }
        ?category a cat:ProductCategory;
-	skos:closeMatch ?cat .
+	           skos:exactMatch ?cat .
+      FILTER (?cat == dbc:Category:Dairy_Products )
        ?product :productName ?productName ;
-	:deduced_type ?deduced_type;
+	          :deduced_type ?deduced_type;
        OPTIONAL {
        FILTER (STR(?productName) = STR(?ingredient)) 
        

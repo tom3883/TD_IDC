@@ -89,8 +89,7 @@
 <Dairy> a :ProductCategory, skos:Concept;
     :categoryName "Dairy";
     skos:prefLabel "Dairy"@en, "Produits Laitiers"@fr;
-    skos:exactMatch dbc:Category:Dairy;
-    skos:closeMatch dbc:Category:Dairy_Products ;
+    skos:exactMatch dbc:Category:Dairy_Products ;
     skos:related dbc:Category:List_of_dairy_products .
     
 
