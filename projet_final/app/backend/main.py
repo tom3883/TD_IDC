@@ -64,7 +64,7 @@ async def read_user(recipe_name: str):
                 ?product :productName ?productName ;
                 :price ?price ;
                 :brandName ?brandName .
-                FILTER (STR(?productName) = STR(?ingredient)) 
+                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
             }}
         }}
     """
