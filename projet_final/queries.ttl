@@ -21,36 +21,39 @@ WHERE {
 # federated query
 PREFIX : <http://recipes-project.com/schema#>
 
-SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price
+SELECT  DISTINCT ?recipeName ?dishType ?ingredientName ?productName ?price ?brandName
 WHERE {
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
         ?r :name ?recipeName ;
            :recipeCategory ?dishType ;
            :recipeIngredient ?ingredient .
     }
+    BIND(REPLACE(STR(?ingredient),STR(?ingredient), lcase(STR(?ingredient))) AS ?ingredientName) .
     OPTIONAL {
        ?product :productName ?productName ;
+       :brandName ?brandName ;
        :price ?price .
-       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredientName))) 
     }
+    
 }
-
 # ingredients 
 PREFIX : <http://recipes-project.com/schema#>
 
-SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price
+SELECT  DISTINCT ?recipeName ?dishType ?ingredientName ?productName ?price
 WHERE {
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=yogurt> {
         ?r :name ?recipeName ;
            :recipeCategory ?dishType ;
            :recipeIngredient ?ingredient .
     }
+    BIND(REPLACE(STR(?ingredient),STR(?ingredient), lcase(STR(?ingredient))) AS ?ingredientName) .
     OPTIONAL { FILTER CONTAINS(lcase(STR(?ingredient)), "yogurt") }
     OPTIONAL {
        ?product :productName ?productName ;
        :price ?price ;
        :categoryName ?categoryName .
-       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+       FILTER (lcase(STR(?productName)) = lcase(STR(?ingredientName))) 
     }
 }
 

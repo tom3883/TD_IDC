@@ -53,18 +53,19 @@ async def read_user(recipe_name: str):
     query = f"""
         PREFIX : <http://recipes-project.com/schema#>
 
-        SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price ?brandName
+        SELECT  DISTINCT ?recipeName ?dishType ?ingredientName ?productName ?price ?brandName
         WHERE {{
             SERVICE <http://localhost/service/edamam/findRecipes?keyword={recipe_name}> {{
                 ?r :name ?recipeName ;
                 :recipeCategory ?dishType ;
                 :recipeIngredient ?ingredient .
             }}
+            BIND(REPLACE(STR(?ingredient),STR(?ingredient), lcase(STR(?ingredient))) AS ?ingredientName) .
             OPTIONAL {{
                 ?product :productName ?productName ;
                 :price ?price ;
                 :brandName ?brandName .
-                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredientName))) 
             }}
         }}
     """
@@ -103,19 +104,20 @@ async def read_user(ingredient_name: str):
     query = f"""
         PREFIX : <http://recipes-project.com/schema#>
 
-        SELECT  DISTINCT ?recipeName ?dishType ?ingredient ?productName ?price ?brandName
+        SELECT  DISTINCT ?recipeName ?dishType ?ingredientName ?productName ?price ?brandName
         WHERE {{
             SERVICE <http://localhost/service/edamam/findRecipes?keyword={ingredient_name}> {{
                 ?r :name ?recipeName ;
                 :recipeCategory ?dishType ;
                 :recipeIngredient ?ingredient .
             }}
-            OPTIONAL {{ FILTER CONTAINS(lcase(STR(?ingredient)), "{ingredient_name}") }}
+            BIND(REPLACE(STR(?ingredient),STR(?ingredient), lcase(STR(?ingredient))) AS ?ingredientName) .
+            OPTIONAL {{ FILTER CONTAINS(?ingredientName), "{ingredient_name}") }}
             OPTIONAL {{
                 ?product :productName ?productName ;
                 :price ?price ;
                 :brandName ?brandName .
-                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredient))) 
+                FILTER (lcase(STR(?productName)) = lcase(STR(?ingredientName))) 
             }}
         }}
     """
