@@ -6,7 +6,7 @@ PREFIX : <http://recipes-project.com/schema#>
 
 SELECT  ?recipeName ?dishType
 WHERE {
-    ?c a :RecipeCategory ;
+    ?category a :RecipeCategory ;
     skos:prefLabel ?dishType .
     SERVICE <http://localhost/service/edamam/findRecipes?keyword=cake> {
         ?recipe :name ?recipeName ;
